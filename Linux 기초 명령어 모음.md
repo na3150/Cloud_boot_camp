@@ -1,6 +1,5 @@
 <h1>Linux   기초 명령어 모음</h1>
 
-<h3>📌INDEX</h3>
 
 <h3>📌INDEX</h3>
 
