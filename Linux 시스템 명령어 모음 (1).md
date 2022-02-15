@@ -17,7 +17,7 @@
 - [du](#du)
 
 
-
+<br><br>
 <h2>uptime</h2>
 
 - 리눅스 시스템이 언제 시작되었으며, 총 얼마 동안 가동되었는지 파악할 수 있는 명령어
@@ -181,11 +181,12 @@ MiB Swap:   2048.0 total,   1585.2 free,    462.8 used.    387.9 avai
 
   - Chrome 창 25개가 실행되고 있지만, 여기서 task는 진하게 표시된 **Chrome 실행 단위** 한개로 본다.
 
-  <img src="C:\Users\USER\Desktop\작업 관리자 태스트.PNG" style="zoom:49%;" />
+  <img src="https://user-images.githubusercontent.com/64996121/154080267-5bdd974a-a758-4d58-80a4-c8a7c27ff614.PNG" width="400" height="250" />
+
 
   - Chrome 창 25개, 각각이 **개별적인 PID**를 갖는다.
 
-<img src="C:\Users\USER\Desktop\PID.PNG" style="zoom:49%;" />
+<img src="https://user-images.githubusercontent.com/64996121/154080451-0fce86e0-4c1b-4c16-bbcd-0742cbef2b9c.PNG" width="400" height="250"/>
 
 
 
