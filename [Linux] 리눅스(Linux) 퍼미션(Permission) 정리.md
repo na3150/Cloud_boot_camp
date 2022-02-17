@@ -20,7 +20,6 @@
 - 파일의 퍼미션은 ls 또는 stat으로 확인할 수 있다.
 - 퍼미션의 종류
 
-![](C:\Users\USER\Desktop\퍼미션 정리.PNG)
 
 - 퍼미션 해석
 
@@ -67,8 +66,6 @@
   ```
 
   - 예시 그림 정리
-
-  <img src="C:\Users\USER\Desktop\퍼미션 그림.jpg" style="zoom:30%;" />
 
 <br><br>
 
