@@ -4,8 +4,8 @@
 
 <h3>📌INDEX</h3>
 
-- [퍼미션(Permission)이란?](#퍼미션Permission이란)
-- [read·write·execution 동작 관련된 명령어](#read·write·execution-동작-관련-명령어)
+- [퍼미션(Permission)이란?](#퍼미션permission이란)
+- [read·write·execution 동작 관련된 명령어](#readwriteexecution-동작-관련-명령어)
 - [chmod](#chmod)
 - [Specia Permission](#special-permission)
   - [SetUID와 SetGID](#setuid와-setgid)
@@ -20,7 +20,7 @@
 - 파일의 퍼미션은 ls 또는 stat으로 확인할 수 있다.
 - 퍼미션의 종류
 
-![](C:\Users\USER\Desktop\퍼미션 정리.PNG)
+<img src="https://user-images.githubusercontent.com/64996121/154481894-9301c09c-3841-4463-a93d-cfc00ac61b00.PNG" width=800 height=300/>
 
 - 퍼미션 해석
 
@@ -68,7 +68,8 @@
 
   - 예시 그림 정리
 
-  <img src="C:\Users\USER\Desktop\퍼미션 그림.jpg" style="zoom:30%;" />
+  <img src="https://user-images.githubusercontent.com/64996121/154482170-c8f96bf6-1507-4888-8255-f138216f6461.jpg" width=400 height=200 />
+
 
 <br><br>
 
