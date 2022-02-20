@@ -31,7 +31,8 @@
   - 사용자로부터 명령을 받아 그것을 해석하고 프로그램을 실행
 - 쉽게 말해, '터미널' 처럼 명령어를 입력하는 환경
 
-<img src="C:\Users\USER\Desktop\shell이란.PNG" style="zoom:50%;" />
+<img src="https://user-images.githubusercontent.com/64996121/154836204-f90d378a-332e-4480-9039-1d17679f0dba.PNG" width=500 height=400/>
+
 
 - **shell의 기능**
   - 자체 내에 프로그래밍 기능이 있어, 프로그램 작성 가능
