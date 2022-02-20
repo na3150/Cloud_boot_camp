@@ -6,7 +6,7 @@
 
 - [shell이란?](#shell이란)
 
-- [shell script란?](#shell script란)
+- [shell script란?](#shell-script란)
 - [shell script 문법](#shell-script-문법)
   - [기본 출력](#기본-출력)
   - [변수](#변수)
