@@ -2,7 +2,7 @@
 
 
 
-<h2>📌INDEX</h2>
+<h3>📌INDEX</h3>
 
 - [shell 메타 문자란?](#shell-메타-문자란)
 - [경로 이름 메타 문자](#경로-이름-메타-문자)
@@ -45,7 +45,7 @@
 
 
 
-<img src="C:\Users\USER\Desktop\경로 이름 대체 문자.PNG" style="zoom:90%;" />
+<img src="https://user-images.githubusercontent.com/64996121/154929769-b517a28b-21e9-4e2f-8617-6b05381ae79c.PNG" width=500 heigth=400 />
 
 
 
@@ -81,7 +81,7 @@
 
 
 
-<img src="C:\Users\USER\Desktop\파일 이름 대체 문자.PNG" style="zoom:90%;" />
+<img src="https://user-images.githubusercontent.com/64996121/154929903-f001761d-8582-49fc-a555-16a7d0d57590.PNG" width=500 heigth=400 />
 
 
 
@@ -139,7 +139,7 @@ za9   zb10  zc010  zc020  zc030  zc040  zc050  zc060  zc070  zc080  zc090  zc100
 
 - echo와 사용 시에 적용
 
-<img src="C:\Users\USER\Desktop\인용부호 메타문자.PNG" style="zoom:90%;" />
+<img src="https://user-images.githubusercontent.com/64996121/154930022-9fdc8503-f342-4591-9a30-44b5dd067f0f.PNG" width=500 heigth=400 />
 
 - 사용 예
 
@@ -165,15 +165,18 @@ date is 2022. 02. 21. (월) 03:31:50 EST
 
 - I/O 관련
 
-<img src="C:\Users\USER\Desktop\방향 재지정 메타 문자.PNG" style="zoom:90%;" />
+<img src="https://user-images.githubusercontent.com/64996121/154930150-6107c6d4-a941-4b0d-bab0-fc15fd73689d.PNG" width=500 heigth=400 />
+
 
 - <h4>표준 입출력</h4>
 
-  <img src="C:\Users\USER\Desktop\표준 입출력.PNG" style="zoom:90%;" />
+  <img src="https://user-images.githubusercontent.com/64996121/154930173-a1edff5d-d5ff-4766-9556-784d47878c05.PNG" width=500 heigth=400 /><br>
 
   -  **리디렉션(redirection) 사용법**
 
-  <img src="C:\Users\USER\Desktop\redirection 사용법.PNG" style="zoom:90%;" />
+<br>
+  <img src="https://user-images.githubusercontent.com/64996121/154930219-9feb0527-21bf-49b4-95db-e6cbd7035113.PNG" width=500 heigth=400 />
+<br>
 
   -  사용 예
 
@@ -269,7 +272,7 @@ cat: error.txt: 그런 파일이나 디렉터리가 없습니다
 ifcfg-ens160
 ```
 
-4. /media 디렉토리 안에 superman-season(1~3) 디렉토리를 각각 만들고 superman-season(1~3)-drama(01~10).avi 파일 생성 후에 이름에 맞추어 각각 넣으시오. (파일 이동시 최대한 간단하게 작성)
+4. /media 디렉토리 안에 superman-season(1~3) 디렉토리를 각각 만들고 superman-season(1-3)-drama(01-10).avi 파일 생성 후에 이름에 맞추어 각각 넣으시오. (파일 이동시 최대한 간단하게 작성)
 
 ```shell
 [root@localhost media]# mkdir /superman-season{1..3}
