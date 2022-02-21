@@ -295,7 +295,7 @@ systemd(1)─┬─systemd-journal(611)
 
 - **주요 SIGNAL**
 
-<img src="C:\Users\USER\Desktop\시그널.PNG" alt="시그널" style="zoom:90%;" />
+<img src="https://user-images.githubusercontent.com/64996121/154955556-9737d4f0-aa60-46fd-b003-6fe7a63e6ad7.PNG" width=500 height=250 />
 
 - -15 시그널 넘버로 죽일(종료) 수 없는 경우
   - 일시 정지 상태
@@ -422,7 +422,8 @@ systemd(1)─┬─systemd-journal(611)
   - 프로세스 실행 시 설정 - nice 명령어 사용
   - 동작 중 변경 가능 -  renice 명령어 사용
 
-<img src="C:\Users\USER\Desktop\우선 순위.PNG" alt="우선 순위" style="zoom:90%;" />
+<img src="https://user-images.githubusercontent.com/64996121/154955830-50302b3d-6272-4541-9a87-2568edf3ef31.PNG"  width=400 height=100 />
+
 
 - 사용 예
 
