@@ -4,11 +4,11 @@
 
 <h3>📌INDEX</h3>
 
-- [계정 관련 파일들](#계정-관련-파일)
+- [계정 관련 파일들](#계정-관련-파일들)
 -  [사용자](#사용자)
 -  [/etc/passwd](#etcpasswd)
 -  [/etc/shadow](#etcshadow)
-- [사용자 전환](#사용자 전환)
+- [사용자 전환](#사용자-전환)
   - [관리자 권한 사용](#관리자-권한-사용)
 - [사용자 관리](#사용자-관리)
   - [사용자 생성](#사용자-생성)
@@ -117,7 +117,8 @@
 
 
 
-<img src="C:\Users\USER\Desktop\etc.passwd 구조.PNG" style="zoom:80%;" />
+<img src="https://user-images.githubusercontent.com/64996121/155144635-ad4b319b-1b19-4ec3-bfac-17fb8a0399ab.PNG" width=650 hegiht=80 />
+
 
 
 
@@ -158,7 +159,7 @@ user05:x:3002:3002::/home1/user05:/bin/bash
 
 
 
-<img src="C:\Users\USER\Desktop\etc.shadow 구조.PNG" style="zoom:80%;" />
+<img src="https://user-images.githubusercontent.com/64996121/155145117-9f0b3711-f86f-4fdb-86c1-bdb11f4feaec.PNG" width=650 hegiht=80 />
 
 
 
@@ -487,7 +488,8 @@ centos:$6$e9Dd1hgZnOm7RM8M$ebNQ9gqkwBBFwRVszRUKuzOZRqVFH/daShoGijET7KeteoBNLD5y3
   - 파일이나 디렉토리에 접근할 때, 소유자 그룹&보조 그룹 권한 모두 검사
 - 기본 그룹과 보조 그룹
 
-<img src="C:\Users\USER\Desktop\기본그룹과 보조그룹.PNG" style="zoom:80%;" />
+<img src="https://user-images.githubusercontent.com/64996121/155144917-5a3df042-5e22-4f78-8666-e49d1baa8f58.PNG" width=500 height=250 />
+
 
 - /etc/group 구조
 
@@ -548,7 +550,7 @@ centos:$6$e9Dd1hgZnOm7RM8M$ebNQ9gqkwBBFwRVszRUKuzOZRqVFH/daShoGijET7KeteoBNLD5y3
 
   
 
-- <h4>그룹 제거</h4>
+- <h4>그룹 삭제</h4>
 
   - **groupdel [option] [groupname]**
 
