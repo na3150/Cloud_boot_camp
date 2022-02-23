@@ -6,8 +6,8 @@
 
 - [확장된 권한(setuid, setgid, stickybit)](#확장된-권한)
 -  [ACL(access control list)](#acl)
-  - [getfacl](#getfacl)
-  - [setfacl](#setfacl)
+    - [getfacl](#getfacl)
+    - [setfacl](#setfacl)
 -  [ACL 실습(문제)](#acl-실습문제)
 
 
