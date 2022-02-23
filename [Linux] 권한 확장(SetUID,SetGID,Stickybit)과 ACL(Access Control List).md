@@ -25,7 +25,7 @@
   - **파일을 읽는 것은 (상위 디렉토리 권한이 아니라) 파일 자체에 대한 권한**이다.
     - 즉, 디렉토리 내부의 파일 목록을 보는 것은 디렉토리의 읽기 권한이지만 디렉토리에 읽기 권한이 없어도, 디렉토리 내의 파일에 읽기 권한이 있으면 파일 내용을 볼 수 있다
 
-- [Special Permission 자세히 알아보기]: https://nayoungs.tistory.com/68#c14
+- Special Permission 자세히 알아보기: https://nayoungs.tistory.com/68#c14
 
 - 확장된 권한(Special Permission)의 종류
 
@@ -61,7 +61,7 @@
 
 
 
-<img src="C:\Users\USER\Desktop\특수권한의 파일,디렉토리에 대한 영향.PNG" style="zoom:80%;" />
+<img src="https://user-images.githubusercontent.com/64996121/155300791-a24de4af-9d96-4b09-844d-68a464efc239.PNG" width=400 height=150/>
 
 
 
@@ -138,7 +138,7 @@
 
 
 
-<img src="C:\Users\USER\Desktop\ACL 형식.PNG" style="zoom:80%;" />
+<img src="https://user-images.githubusercontent.com/64996121/155300980-91e6cc3a-257e-43d6-a935-1936ec54c695.PNG" width=500 height=300/>
 
 
 
