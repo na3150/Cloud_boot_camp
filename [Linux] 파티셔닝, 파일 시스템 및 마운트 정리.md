@@ -4,7 +4,7 @@
 
 <h3>📌INDEX</h3>
 
-- [시스템 디스크 사용 절차](#시스템 디스크 사용 절차)
+- [시스템 디스크 사용 절차](#시스템-디스크-사용-절차)
 - [디바이스 정보 확인: lsblk, blkid, df-Th](#디바이스-정보-확인)
   - [lsblk](#lsblk)
   - [blkid](#blkid)
@@ -12,8 +12,8 @@
   - [fdisk](#fdisk)
   - [gdisk](#gdisk)
   - [partprobe](#partprobe)
--  [파일 시스템](#파일-시스템)
-  - [mkfs](#mkfs)
+-  [파일 시스템 포맷](#파일-시스템-포맷)
+   - [mkfs](#mkfs)
 - [실습](#실습)
 
 <br>
@@ -317,7 +317,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 
 
-<img src="C:\Users\USER\Desktop\파티션 방식.PNG" style="zoom:80%;" />
+<img src="https://user-images.githubusercontent.com/64996121/155540309-70144f11-6a3c-4302-8d51-e3d285890cb1.PNG" width=450 height=200 />
 
 
 
