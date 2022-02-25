@@ -31,7 +31,7 @@
 
 
 
-<img src="C:\Users\USER\Desktop\논리 볼륨의 구조.PNG" style="zoom:80%;" />
+<img src="https://user-images.githubusercontent.com/64996121/155739930-ecbc5d8d-5a94-4e46-9468-1f197a923d21.PNG" width=250 heigth=200 />
 
 
 
