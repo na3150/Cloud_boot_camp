@@ -6,20 +6,20 @@
 
 - [systemd란?](#systemd란)
 -  [systemctl](#systemctl)
-  - [시스템의 unit 확인](#시스템의-unit-확인)
-  - [시스템 unit의 활성화 상태 확인](#시스템-unit의-활성화-상태-확인)
-  - [unit 제어 서브 커맨드(sub-command)](#unit-제어-서브-커맨드sub-command)
+   - [시스템의 unit 확인](#시스템의-unit-확인)
+   - [시스템 unit의 활성화 상태 확인](#시스템-unit의-활성화-상태-확인)
+   - [unit 제어 서브 커맨드(sub-command)](#unit-제어-서브-커맨드sub-command)
 -  [log](#log)
-  - [rsyslog 서비스](#rsyslog-서비스)
-  - [실시간 로그 모니터링](#실시간-로그-모니터링)
-  - [로그 메세지 발생](#로그-메세지-발생)
+   - [rsyslog 서비스](#rsyslog-서비스)
+   - [실시간 로그 모니터링](#실시간-로그-모니터링)
+   - [로그 메세지 발생](#로그-메세지-발생)
 - [journalctl](#journalctl)
 
 <br>
 
 <br>
 
-<h2>systemd란?
+  <h2>systemd란?</h2>
 
 - systemd는 **init 프로세스를 대체하는 데몬이다.** (PID 1)
   - 데몬: 시스템에 의해 실행되는 프로세스
@@ -164,8 +164,9 @@ cups.path                                     enabled
   - 녹색 : 의존성이 필요한 상태(해당 부분)
   - 예시
 
-<img src="C:\Users\USER\Desktop\의존성 확인.PNG" style="zoom:60%;" />
+<img src="https://user-images.githubusercontent.com/64996121/156345347-15d1c2ac-9316-470a-a9e0-d53c0f57bd02.PNG" width=500 heigth=300 />
 
+  
 
 
 - ⭐특정 **서비스를 설치한 후** 앞으로도 계속해서 해당 서비스를 실행 설정할 때 **start, enable 모두 설정**해주어야함
