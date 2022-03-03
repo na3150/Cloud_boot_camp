@@ -7,7 +7,7 @@
 - [RPM Package Manager](#rpm-package-manager)
   - [rpm 명령어](#rpm-명령어)
 -  [yum](#yum)
-  - [yum 명령어](#yum-명령어)
+   - [yum 명령어](#yum-명령어)
 -  [repository 파일 설정](#repository-파일-설정)
 
 <br>
