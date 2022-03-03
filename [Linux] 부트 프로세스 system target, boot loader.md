@@ -6,15 +6,15 @@
 
 - [리눅스 부트 프로세스](#리눅스-부트-프로세스)
 -  [system target](#system-target)
-  - [target 목록 출력하기](#target-목록-출력하기)
-  - [default target 확인](#default-target-확인)
-  - [default target 설정](#default-target-설정)
-  - [target 전환](#target-전환)
+   - [target 목록 출력하기](#target-목록-출력하기)
+   - [default target 확인](#default-target-확인)
+   - [default target 설정](#default-target-설정)
+   - [target 전환](#target-전환)
 - [root 비밀번호 변경하기](#root-비밀번호-변경하기)
 - [부트 로더(boot loader)](#부트-로더boot-loader)
-  - [부트로더 커널 이미지 시간](#부트로더-커널-이미지-시간)
-  - [부트로더 ID 및 PW 설정](#부트로더-id-및-pw-설정)
-  - [설정 내용 부트로더 인식](#설정-내용-부트로더-인식)
+   - [부트로더 커널 이미지 시간](#부트로더-커널-이미지-시간)
+   - [부트로더 ID 및 PW 설정](#부트로더-id-및-pw-설정)
+   - [설정 내용 부트로더 인식](#설정-내용-부트로더-인식)
 
 
 
@@ -50,7 +50,7 @@
 
    
 
-<img src="C:\Users\USER\Desktop\커널.PNG" style="zoom:60%;" />
+<img src="https://user-images.githubusercontent.com/64996121/156555679-a4298173-196b-4aa0-a31b-f0cbd15d0be1.PNG" width=500 heigth=300 />
 
 
 
@@ -122,7 +122,7 @@ lrwxrwxrwx. 1 root root 13  2월 21 14:52 /lib/systemd/system/runlevel6.target -
 
   
 
-<img src="C:\Users\USER\Desktop\target 종속성.PNG" style="zoom:60%;" />
+<img src="https://user-images.githubusercontent.com/64996121/156555794-6f3d21ac-af23-41b7-9100-8626b2bb8220.PNG" width=500 heigth=350 />
 
 
 
@@ -228,23 +228,27 @@ Created symlink from /etc/systemd/system/default.target to /usr/lib/systemd/syst
 
 1. 커널선택 화면에서 아무키를 눌러 카운트 해제
 
-<img src="C:\Users\USER\Desktop\커널.PNG" style="zoom:60%;" />
+<img src="https://user-images.githubusercontent.com/64996121/156555943-ad423abe-5e6d-4b19-bddc-fae71c0b54a0.PNG" width=500 heigth=300 />
+
 
 2. 원하는 커널에서 'e' 키를 눌러서 grub 진입
 
-<img src="C:\Users\USER\Desktop\e 키 눌러 grub 진입.PNG" style="zoom:60%;" />
+<img src="https://user-images.githubusercontent.com/64996121/156555982-7ce9fb06-30af-40ff-9d2c-5e02c5bb8a55.PNG" width=500 heigth=300 />
+
 
 3. linux16 라인 끝에 rd.break 입력 후 ctrl + x 
    - ctrl + x 누르면 프롬프트 창이 나옴
 
-<img src="C:\Users\USER\Desktop\rdbreak.PNG" style="zoom:60%;" />
+<img src="https://user-images.githubusercontent.com/64996121/156556030-48cd4b5e-2128-41d7-affd-06bd4ab2d59d.PNG" width=500 heigth=300 />
+
 
 4. mount -o rw,remount /sysroot 입력
 
 5. chroot /sysroot 입력
    - 시스템에 들어간다(shell)
 
-<img src="C:\Users\USER\Desktop\스크립트 들감.PNG" style="zoom:60%;" />
+<img src="https://user-images.githubusercontent.com/64996121/156556070-3da97259-7f1e-4859-b426-cac716d0e233.PNG" width=500 heigth=300 />
+
 
 6. passwd 
    - 패스워드 변경
@@ -257,13 +261,14 @@ Created symlink from /etc/systemd/system/default.target to /usr/lib/systemd/syst
 
 8. ctrl+d 2번
 
-<img src="C:\Users\USER\Desktop\비번 변경후 ctrl d.PNG" style="zoom:60%;" />
+<img src="https://user-images.githubusercontent.com/64996121/156556110-5a5b05fa-d93e-4dd0-a9a2-6f08868a9125.PNG" width=500 heigth=300 />
 
 
 
 - 다시 root로 로그인해보면 비밀번호가 정상적으로 변경된 것을 확인할 수 있다
 
-<img src="C:\Users\USER\Desktop\비밀번호 변경완료.PNG" style="zoom:60%;" />
+<img src="https://user-images.githubusercontent.com/64996121/156556165-08c6555d-d064-46ab-b41d-4fccef0cac3a.PNG" width=500 heigth=300 />
+
 
 <br>
 
@@ -329,15 +334,14 @@ GRUB_DISABLE_RECOVERY="true"
 
 
 
-<img src="C:\Users\USER\Desktop\부트로드 비밀번호 변경.PNG" style="zoom:60%;" />
-
+<img src="https://user-images.githubusercontent.com/64996121/156556269-0a94fb00-058b-4564-aad6-ccad3c80326a.PNG" width=500 heigth=300 />
 
 
  
 
 <h4>설정 내용 부트로더 인식</h4>
 
-- 앞서 설명한 '부트로더 커널 이미지 시간' '부트로드 ID 및 PW' 등의 **부트로더 설정을 변경한 후에는 시스템에 적용**시키기 위해서는 **아래의 명령어 입력 후 재부팅(reboot)**해야한다
+- 앞서 설명한 '부트로더 커널 이미지 시간' '부트로드 ID 및 PW' 등의 **부트로더 설정을 변경한 후에는 시스템에 적용**시키기 위해서는 **아래의 명령어 입력 후 재부팅(reboot)** 해야한다
 - **grub2-mkconfig -o /boot/grub2/grub.cfg**
 
 ```shell
