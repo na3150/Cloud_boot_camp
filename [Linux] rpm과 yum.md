@@ -28,7 +28,7 @@
 
 
 
-<img src="C:\Users\USER\Desktop\rpm 구조.png" style="zoom:67%;" />
+<img src="https://user-images.githubusercontent.com/64996121/156574717-50d59db4-cda8-424f-a45f-c55ca008a123.png" width=380 height=90 />
 
 
 
