@@ -6,7 +6,7 @@
 
 - [NetworkManager](#networkmanager)
 - [네트워크 설정 방법 4가지](#네트워크-설정-방법-4가지)
-  - [1. 직접 편집하기](#직접 편집하기)
+  - [1. 직접 편집하기](#직접-편집하기)
   - [2. nmtui](#nmtui)
   - [3. 그래픽 도구](#그래픽-도구)
   - [4. nmcli](#nmcli)
@@ -126,9 +126,9 @@ ONBOOT=no
 
 - 그래픽 도구를 이용하여 네트워크 설정 편집
 
-<img src="C:\Users\USER\Desktop\nmtui.PNG" style="zoom:45%;" />
+<img src="https://user-images.githubusercontent.com/64996121/156922285-190adc98-3148-4cda-89ae-e6c430684d5a.PNG" width=400 height=280 />
 
-<img src="C:\Users\USER\Desktop\nmtui2.PNG" style="zoom:45%;" />
+<img src="https://user-images.githubusercontent.com/64996121/156922331-500a6c16-9cd9-4abc-a1fb-529c9b671751.PNG" width=400 height=280  />
 
 
 
