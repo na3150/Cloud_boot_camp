@@ -7,7 +7,7 @@
 - [ssh란?](#ssh란)
 - [ssh 접속 과정](#ssh-접속-과정)
 -  [키 기반 인증 방식](#키-기반-인증-방식)
--  [/etc/ssh/sshd_config](#etcsshsshdconfig)
+-  [/etc/ssh/sshd_config](#etcsshsshd_config)
 
 <br>
 
@@ -19,7 +19,7 @@
 
 - ssh는 secure shell의 줄임말로, 보안적으로 취약했던 기존 telnet을 대체하기위해 설계되었다.
   - telnet : 전통적으로 사용되어 온 원격 접속 서비스로, 암호화하지 않아(평문 전송) 정보 노출의 위험이 크다
-- **OpenSSH secure shell(ssh)**란?
+- **OpenSSH secure shell(ssh)** 란?
   - **원격 접속  프로토콜**
   - TCP/22번 포트 사용
   - 패킷 전송 시 **암호화**된 패킷 전송
@@ -61,7 +61,7 @@ ssh_host_ecdsa_key  ssh_host_ed25519_key.pub  sshd_config
 
 <h2>ssh 접속 과정</h2>
 
-- Server(대기) & Client(접속)\
+- Server(대기) & Client(접속)
 
 
 
@@ -123,7 +123,7 @@ known_hosts
 
 
 
-![](C:\Users\USER\Desktop\키 기반 인증을 이용한 로그인.PNG)
+![키 기반 인증을 이용한 로그인](https://user-images.githubusercontent.com/64996121/157049314-3b8938fb-6b6c-4c5e-836c-98f10cb089e2.PNG)
 
 
 
