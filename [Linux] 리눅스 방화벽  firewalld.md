@@ -7,7 +7,6 @@
 - [리눅스 방화벽이란?](#리눅스-방화벽이란)
 -  [zone](#zone)
 -  [firewalld](#firewalld)
--  
 
 <br>
 
@@ -31,8 +30,8 @@
 
 ```shell
 Netfilter(Kernel)      <- iptables(명령)          <- iptables(service)
-                       <- firewall(service)      <- firewall-cmd
-                                                 <- firewall-config
+                       <- firewall(service)       <- firewall-cmd
+                                                  <- firewall-config
 ```
 
 <br>
