@@ -1,4 +1,4 @@
-<h1> [Linux] DNS </h1>
+<h1> [Linux] DNS : 서버 구성, 정방향·역방향 조회 </h1>
 
 
 
@@ -53,7 +53,8 @@
 
 - **Domain Name 구조**(피라미드 구조)
 
-<img src="C:\Users\USER\Desktop\도메인 피라미드 구조.PNG" style="zoom:50%;" />
+<img src="https://user-images.githubusercontent.com/64996121/157440149-2902d2b8-c20a-449d-afe2-24f666413484.PNG" width=600 heigth=400/>
+
 
 - **"www.sungshin.ac.kr" 조회 과정**
 
@@ -139,7 +140,7 @@ PING client (192.168.56.200) 56(84) bytes of data.
 
 
 
-<h4>/etc/reslov.conf</h4>
+<h4>/etc/resolv.conf</h4>
 
 - **호스트가 사용할 DNS 서버의 주소를 설정**한다.
 - 자신의 호스트가 DNS 서버라면 자신의 IP주소를 적어줘야한다.
@@ -245,7 +246,8 @@ allow-transfer { any; }; //zone transfer 모두 허용
 
 
 
-<img src="C:\Users\USER\Desktop\zone 파일 구성.PNG" style="zoom:70%;" />
+<img src="https://user-images.githubusercontent.com/64996121/157440288-12dec97c-f36c-47db-b4b6-9ef27beb70e5.PNG" width=600 heigth=400 />
+
 
 - NS : 네임 서버 지정
 - A : ipv4 주소
