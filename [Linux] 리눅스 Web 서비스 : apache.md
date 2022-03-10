@@ -8,11 +8,10 @@
   - [정적 웹 서버 동작 방식](#정적-웹-서버-동작-방식)
   - [동적 웹 서버 동작 방식](#동적-웹-서버-동작-방식)
 -  [apache](#apache)
-  - [apache 설정](#apache-설정)
-  - [apache 구성](#apache-구성)
-  - [apache 웹페이지 설정](#apache-웹페이지-설정)
+   - [apache 설정](#apache-설정)
+   - [apache 구성](#apache-구성)
+   - [apache 웹페이지 설정](#apache-웹페이지-설정)
 -  [가상 호스트(Virtual Hosts)](#가상-호스트)
--  
 
 <br>
 
@@ -41,7 +40,7 @@
   - HTTP 서버(SW)가 있는 컴퓨터(하드웨어)로 구성
   - 서버가 불려진 파일을 클라이언트의 브라우저로 전송
 
-<img src="C:\Users\USER\Desktop\정적 웹 서버 동작 방식.PNG" style="zoom:67%;" />
+<img src="https://user-images.githubusercontent.com/64996121/157681662-1dfa7de7-a8da-4df7-95cd-2e7188a9f00b.PNG" width=500 height=220 />
 
 
 
@@ -62,7 +61,8 @@
   - 정적 웹 서버와 추가적인 소프트웨어로 구성
   - 서버가 HTTP서버를 통해 클라이언트의 브라우저로 전송하기 전에, 서버가 업데이트를 하기 때문에 동적이라 칭함
 
-<img src="C:\Users\USER\Desktop\동적 웹 서버 동작 방식.PNG" style="zoom:67%;" />
+<img src="https://user-images.githubusercontent.com/64996121/157681901-1d7cd4ff-c66a-4ad6-a5a9-8117ba2cf6b9.PNG" width=500 height=220 />
+
 
 1. 클라이언트 즉, 웹 브라우저를 통해 80번 포트로 웹 서버에 연결
 2. 사용자 문서에 동적인 페이지를 표현하는 php 프로그램 요청
@@ -209,7 +209,7 @@ success
 success
 ```
 
- <img src="C:\Users\USER\Desktop\http 출력.PNG" style="zoom:60%;" />
+ <img src="https://user-images.githubusercontent.com/64996121/157681976-114e11a4-45b9-416f-8fa0-8ad00817f0ab.PNG" witdh=300 height=200 />
 
 <br>
 
