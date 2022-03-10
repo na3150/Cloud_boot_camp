@@ -1,17 +1,17 @@
 <h2> [Linux] master/slave 설정</h2>
 
-
+<br>
 
 👉[미리 보고 와야할 글](https://nayoungs.tistory.com/89)
 
 
-
+<br>
 <h3>📌INDEX</h3>
 
 - [Master/Slave 구조란?](#masterslave-구조란)
--  [Master/Slave 구조 설정](#MasterSlave-구조-설정)
-  - [Master 서버 설정](#master-서버-설정)
-  - [Slave 서버 설정](#slave-서버-설정)
+-  [Master/Slave 구조 설정](#masterslave-구조-설정)
+   - [Master 서버 설정](#master-서버-설정)
+   - [Slave 서버 설정](#slave-서버-설정)
 
 <br>
 
