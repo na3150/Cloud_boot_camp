@@ -25,7 +25,8 @@
 
 - **HTTPS 암호화 방식**
 
-<img src="https://user-images.githubusercontent.com/64996121/157842672-d8f5ca82-3844-47ce-bb36-0f472c90648f.PNG" style="zoom:60%;" />
+<img src="https://user-images.githubusercontent.com/64996121/157842672-d8f5ca82-3844-47ce-bb36-0f472c90648f.PNG" width=800 height=500 />
+<br>
 
 1. 클라이언트 -> 서버로 랜덤 데이터와 사용 가능한 암호화 방식을 보낸다.
    - 클라이언트가 생성한 랜덤 데이터(32 byte)
