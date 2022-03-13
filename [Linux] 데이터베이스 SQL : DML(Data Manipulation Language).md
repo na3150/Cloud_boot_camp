@@ -1,4 +1,4 @@
-<h1> [Linux] 데이터베이스 SQL DML(Data Manipulation Language)</h1>
+<h1> [Linux] 데이터베이스 SQL : DML(Data Manipulation Language)</h1>
 
 
 
@@ -7,14 +7,14 @@
 - [데이터베이스란?](#데이터베이스란)
 - [데이터 베이스 설치 및 설정](#데이터-베이스-설치-및-설정)
 -  [SQL 문법](#sql-문법)
-  - [SQL 문법의 분류](#sql-문법의-분류)
-  - [WHERE 조건](#where-조건)
-  - [LIKE와 함께 사용하는 와일드 문자](#like와-함께-사용하는-와일드-문자)
+   - [SQL 문법의 분류](#sql-문법의-분류)
+   - [WHERE 조건](#where-조건)
+   - [LIKE와 함께 사용하는 와일드 문자](#like와-함께-사용하는-와일드-문자)
 -  [DML 구문](#dml-구문)
-  - [SELECT](#select)
-  - [INSERT](#insert)
-  - [UPDATE](#update)
-  - [DELETE](#delete)
+   - [SELECT](#select)
+   - [INSERT](#insert)
+   - [UPDATE](#update)
+   - [DELETE](#delete)
 
 <br>
 
