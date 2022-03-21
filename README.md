@@ -1,3 +1,4 @@
-# studying_linux
+# cloud_boot_camp
 
-Linux 정리 및 공부기록
+playdata cloud bootcamp 4기
+
