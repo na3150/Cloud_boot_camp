@@ -38,7 +38,7 @@
 
 <br>
 
-<h2>Amazon EC2란? </h2>
+<h2>Amazon EC2란?</h2>
 
 - Amazon EC2는 **Elastic Compute Cloud**의 약자로 AWS 상에서 **안정적이며, 크기를 조정 가능한 컴퓨팅 파워를 제공하는 웹 서비스**
   - 클라우드에서 제공되는 크기를 조정할 수 있는 컴퓨팅 파워
@@ -110,79 +110,79 @@ Amazon EC2는 사용자의 요구사항에 따라 비용을 최적화할 수 있
 
 2)EC2 접속 > 인스턴스 > 인스터스 시작
 
-![image-20220329185028295](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329185028295.png)
+![ec2 1](https://user-images.githubusercontent.com/64996121/160588580-c5ba3bd8-f7ce-448b-b1b6-d07deb7cb226.jpg)
+
 
 3)Windows Server 2022 Base 선택
 
-![image-20220329185050798](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329185050798.png)
+![ec2 2](https://user-images.githubusercontent.com/64996121/160588930-bfc58806-1ec2-4b00-9b2d-81ecb8dda709.png)
 
 4)t2.micro 선택 후 다음
 
-![image-20220329185131749](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329185131749.png)
+![ec2 3](https://user-images.githubusercontent.com/64996121/160588968-b7e46cee-ad68-4d2b-bc58-f2ee1171d94f.png)
 
 5)별다른 설정 없이 다음
 
-![image-20220329185123559](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329185123559.png)
+![ec2 4](https://user-images.githubusercontent.com/64996121/160588976-e879c4d7-0de0-40b2-a321-4e7b0766f92f.png)
 
 6)별다른 설정 없이 다음
 
-![ec2 5](C:\Users\USER\Desktop\ec2 5.jpg)
+![ec2 5](https://user-images.githubusercontent.com/64996121/160589752-c73f82cd-e4c3-4548-ae6d-3131269a5726.jpg)
 
 7)태그 추가 : 필수 아닌 선택, 이후 특정 인스턴스를 빠르게 찾기 위함
 
-![image-20220329185409253](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329185409253.png)
+![ec2 6](https://user-images.githubusercontent.com/64996121/160589024-7452067f-0b9a-4e3c-80c7-03c970af0253.png)
 
 8)보안 그룹 구성 : 자신의 ip 입력(ipfind 또는 네이버창에 ip 주소 입력 후 확인)
 
-![image-20220329185427542](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329185427542.png)
+![ec2 7](https://user-images.githubusercontent.com/64996121/160589049-faaf7f15-3f53-459e-92e6-d7522f91fa29.jpg)
 
 9)검토 후 시작
 
-![image-20220329185513723](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329185513723.png)
+![ec2 8](https://user-images.githubusercontent.com/64996121/160589069-3537f16a-6932-4b91-aece-ea9d4e8071a0.jpg)
 
 10)키 페어 생성
 
-![image-20220329185526833](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329185526833.png)
+![ec2 9](https://user-images.githubusercontent.com/64996121/160589089-2fe475e2-e27f-475e-afb8-fe9d92de4244.png)
 
 11)키 페어 이름 입력 > 키 페어 다운로드 > 인스턴스 시작
 
-![image-20220329185554742](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329185554742.png)
+![ec2 10](https://user-images.githubusercontent.com/64996121/160589096-fedb2a73-0231-483a-9d79-763958f09ef5.png)
 
 12)EC2에 다시 접속하여 생성된 인스턴스 확인
 
-![image-20220329185636887](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329185636887.png)
+![ec2 11](https://user-images.githubusercontent.com/64996121/160589111-7830308c-5ef7-4198-bcc4-8c1102469983.jpg)
 
 13)EC2 접속 > 생성된 인스턴스 ID 클릭 > 연결 클릭
 
-![image-20220329185841624](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329185841624.png)
+![Inkedec2 12_LI](https://user-images.githubusercontent.com/64996121/160589563-7a76a339-8bcd-42e5-87f2-6280258cc632.jpg)
 
 14)RDP 클라이언트 > 암호 가져오기 클릭
 
-![image-20220329185921709](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329185921709.png)
-
+![ec2 13](https://user-images.githubusercontent.com/64996121/160589137-515bf0cb-3e4c-4a5a-a8cf-33ef07883dd9.jpg)
 15)Browse 클릭 > .pem 확장자의 키(key) 열기
 
-![image-20220329190002452](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329190002452.png)
+![ec2 14](https://user-images.githubusercontent.com/64996121/160589152-12d3d34e-f1fc-4b11-8ebf-0b67ae003a70.png)
 
 16)암호 해독
 
-![image-20220329190019625](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329190019625.png)
+![ec2 15](https://user-images.githubusercontent.com/64996121/160589165-612c2531-7a3d-41dc-b1e9-18851edbfa8a.jpg)
 
 17)원격 데스크톱 파일 다운로드 > 연결
 
-![image-20220329190038060](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329190038060.png)
+![ec2 16](https://user-images.githubusercontent.com/64996121/160589180-b55f0018-0b0d-4695-9f33-0a8369bcf30b.jpg)
 
 18)암호 복사 > 입력
 
-![image-20220329190055320](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329190055320.png)
+![ec2 17](https://user-images.githubusercontent.com/64996121/160589188-37f5be05-bfe7-48fd-888e-56934b866d90.jpg)
 
 19)'예' 클릭
 
-![image-20220329190221194](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329190221194.png)
+![Inkedec2 18_LI](https://user-images.githubusercontent.com/64996121/160589615-6c8f3f33-32c5-462f-9b03-267d4fa4087a.jpg)
 
 20)연결 완료
 
-![image-20220329190427263](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329190427263.png)
+![ec2 19](https://user-images.githubusercontent.com/64996121/160589210-c31a8d81-7016-4e4e-a9ca-743951e8e210.jpg)
 
 <br>
 
@@ -192,30 +192,30 @@ Amazon EC2는 사용자의 요구사항에 따라 비용을 최적화할 수 있
 
 1)연결된 windows 서버에서 Server Manager 실행
 
-![image-20220329190446406](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329190446406.png)
+![ec2 20](https://user-images.githubusercontent.com/64996121/160589872-fff9fda5-04e9-47b0-af54-86b26e295207.jpg)
 
 2)Add roles and features 클릭(대기 시간이 필요할 수 있음)
 
-![image-20220329190513717](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329190513717.png)
+![ec2 21](https://user-images.githubusercontent.com/64996121/160589271-6221e503-e09f-4875-8826-c594a60185ed.jpg)
 
 3)모두 next > Server Roles에서 IIS 선택
 
-![image-20220329190554494](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329190554494.png)
+![ec2 22](https://user-images.githubusercontent.com/64996121/160589282-1061d5cf-410f-450d-b3bf-4b7745861c12.jpg)
 
 4)install 클릭
 
-![image-20220329190610716](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329190610716.png)
+![ec2 23](https://user-images.githubusercontent.com/64996121/160589297-95a0ab9e-5360-4aac-8534-87526f738a04.jpg)
 
 5)설치 완료 후 close 클릭
 
-![image-20220329190634195](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329190634195.png)
+![ecw 24](https://user-images.githubusercontent.com/64996121/160589441-8f26be3b-8c8b-4610-8be0-e1a47253bfbb.jpg)
 
 6)EC2 > 보안그룹 > HTTP 80번 포트 열어줌
 
-![image-20220329190713798](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329190713798.png)
+![ec2 25](https://user-images.githubusercontent.com/64996121/160589331-134dc63d-dd58-45ef-9e6b-58654f71daed.jpg)
 
 7)인스턴스의 퍼블릭 ip4 주소로 접속
 
-![image-20220329190731122](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329190731122.png)
+![ec2 26](https://user-images.githubusercontent.com/64996121/160589352-e77face2-fdcd-4211-b94d-7e9c543665a9.jpg)
 
-![image-20220329190752043](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220329190752043.png)
+![Inked윈도우 접속_LI](https://user-images.githubusercontent.com/64996121/160589511-077db871-2438-410e-9607-1c59c3285c01.jpg)
