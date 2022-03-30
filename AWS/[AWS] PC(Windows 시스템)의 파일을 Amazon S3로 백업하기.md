@@ -8,29 +8,29 @@
 
 3)backup을 위한 버킷 생성
 
-![image-20220330095016234](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220330095016234.png)
+![1](https://user-images.githubusercontent.com/64996121/160734807-1c33818c-52bc-4830-8dc0-1e43f5742806.png)
 
 4)AWS CLI 사용을 위해 IAM 계정 생성
 
 - IAM - [사용자] - [사용자 추가]
 
-![image-20220330095039028](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220330095039028.png)
+![2](https://user-images.githubusercontent.com/64996121/160734818-4b6c5df9-41fc-4022-a2af-9c5c530ccc3a.jpg)
 
 5)[사용자 이름] - [프로그래밍 방식 액세스]
 
-![image-20220330095120246](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220330095120246.png)
+![3](https://user-images.githubusercontent.com/64996121/160734830-b06921b7-633a-4112-abd7-7e5c013668b0.png)
 
 6)[그룹 이름] - [AdministratorAccess]
 
-![image-20220330095144971](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220330095144971.png)
+![4](https://user-images.githubusercontent.com/64996121/160734839-b6058dff-c2ec-4dda-b7e8-b2a90c7eec9c.png)
 
 7)그룹 생성 후 사용자 추가
 
 - 사용자 만들기 및 .csv 파일 다운로드
 
-![image-20220330095211502](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220330095211502.png)
+![5](https://user-images.githubusercontent.com/64996121/160734849-9836d962-d501-426c-a0bb-c9062f0aaa15.png)
 
-![image-20220330095308350](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220330095308350.png)
+![6](https://user-images.githubusercontent.com/64996121/160734858-f677d4ba-56de-4b4f-9140-fd594b299b4c.jpg)
 
 - csv 파일 구성
 
@@ -40,7 +40,7 @@ User name	Password	Access key ID	Secret access key	Console login link
 
 8)[링크](#https://docs.aws.amazon.com/cli/latest/userguide/getting-started-version.html)에서 aws cli 버전 2 다운로드
 
-![image-20220330095612527](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220330095612527.png)
+![7](https://user-images.githubusercontent.com/64996121/160734872-415fe3a8-4e86-457f-a515-ca740342e464.png)
 
 9)cmd창 열기
 
@@ -82,5 +82,5 @@ upload: awsbackup-test\test.txt to s3://nayoung-desktop-backup-test/test.txt
 
 - 정상적으로 sync가 된 것을 확인할 수 있음
 
-![image-20220330100025644](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220330100025644.png)
+![8](https://user-images.githubusercontent.com/64996121/160734894-d50f40d0-6bcd-4cab-a1a5-16d4a65d6720.jpg)
 
