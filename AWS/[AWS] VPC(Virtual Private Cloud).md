@@ -4,15 +4,14 @@
 
 <h3>📌INDEX</h3>
 
-- [VPN](#vpnvirtualprivatenetwork)
-- [VPC](#vpcvirtualprivatecloue)
+- [VPN](#vpnvirtual-private-network)
+- [VPC](#vpcvirtual-private-cloud)
 - [VPC의 구성 요소](#vpc의-구성-요소)
 - [VPC와 서브넷(Subnet)](#vpc와-서브넷subnet)
 - [라우팅 테이블(Routing Table)](#라우팅-테이블routing-table)
 -  [VPC의 주요 서비스](#vpc의-주요-서비스)
 
 <br>
-
 <br>
 
 <h2>VPN(Virtual Private Network)</h2>
@@ -46,7 +45,7 @@ Amazon VPC는 **Virtual Private Cloud**의 약자로, AWS 클라우드에서 **�
 
 - 프리 티어(Free Tier)
   - VPC 자체는 비용이 발생하지 않지만, VPN 연결 시 네트워크 송/수신에 따른 종량제 비용 발생
-- 공식 문서 : [VPC란 무엇인가?]([Amazon VPC란 무엇인가? - Amazon Virtual Private Cloud](https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/what-is-amazon-vpc.html)) 
+- 공식 문서 : [VPC란 무엇인가?](https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/what-is-amazon-vpc.html) 
 
 <br>
 
@@ -87,7 +86,7 @@ Amazon VPC는 **Virtual Private Cloud**의 약자로, AWS 클라우드에서 **�
 
 - 이러한 VPC는 AWS 클라우드에서 다른 가상 네트워크가 논리적으로 분리되어 있으며, Amazon EC2 인스턴스와 같은 AWS 리소스를 VPC에서 실행할 수 있음
 
-- **VPC 내부의 네트워크에서 목적에 따라 분리된 IP Block의 모음을 서브넷(Subnet)**이라고 함
+- **VPC 내부의 네트워크에서 목적에 따라 분리된 IP Block의 모음을 서브넷(Subnet)** 이라고 함
   - 네트워크상 서브넷과 동일한 개념
 - VPC는 리전(Region)의 모든 가용 영역(Availability Zone)에 적용되며, 각 가용 영역에 하나 이상의 서브넷을 추가할 수 있음
 - **서브넷은 단일 가용 영역에서만 생성**할 수 있으며, 여러 가용 영역으로 확장할 수 없음
@@ -140,7 +139,7 @@ Amazon VPC는 **Virtual Private Cloud**의 약자로, AWS 클라우드에서 **�
 
 
 
-![보안그룹과 ACL](C:\Users\USER\Desktop\보안그룹과 ACL.PNG)
+![보안그룹과 ACL](https://user-images.githubusercontent.com/64996121/161058403-b8c73a09-abb1-4868-852f-e7b01dd0a886.PNG)
 
 
 
