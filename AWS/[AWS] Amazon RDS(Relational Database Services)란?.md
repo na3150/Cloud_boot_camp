@@ -99,3 +99,14 @@
 - Amazon DynamoDB : NoSQL 기반의 중단 없는 확장성을 제공하는 데이터베이스
 - AmazonRedShift : 대용량 병렬 페타바이트급 데이터웨어하우스(DataWarehouse 서비스)
 - Amazon Aurora : [Amazon Aurora란?](https://docs.aws.amazon.com/ko_kr/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html)
+
+<br>
+<br>
+
+**📋 실습**
+
+[자습서: 웹 서버 및 Amazon RDS DB 인스턴스 생성 - Amazon Relational Database Service](https://docs.aws.amazon.com/ko_kr/AmazonRDS/latest/UserGuide/TUT_WebAppWithRDS.html)
+
+*주의 : public subnet의 instance는 퍼블릭 IP 할당 활성화, private subnet의 인스턴스는 퍼블릭 IP 할당 비활성화
+
+![             단일 VPC 시나리오         ](https://docs.aws.amazon.com/ko_kr/AmazonRDS/latest/UserGuide/images/con-VPC-sec-grp.png)
