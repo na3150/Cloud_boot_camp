@@ -24,19 +24,19 @@
 
 [이미지 출처](https://prev.github.io/posts/네이버-오픈소스로-확장성-있는-아키텍처를-1편/)
 
-<img src="https://prev.github.io/attachs/scalable-architecture1/loadbalancer.png" alt="img" style="zoom: 50%;" />
+<img src="https://prev.github.io/attachs/scalable-architecture1/loadbalancer.png" alt="img" weight=400 height=300 />
 
 
 
 
 
-
+<br>
 
 **웹  트래픽 증가에 대한 처리 방식**
 
 
 
-<img src="https://prev.github.io/attachs/scalable-architecture1/scale_up_out.png" alt="네이버 오픈소스를 활용하여 확장성 있는 서버 아키텍처를 구축하고 성능 개선해보기 - 1편 - Prev's Blog" style="zoom: 33%;" />
+<img src="https://prev.github.io/attachs/scalable-architecture1/scale_up_out.png" alt="네이버 오픈소스를 활용하여 확장성 있는 서버 아키텍처를 구축하고 성능 개선해보기 - 1편 - Prev's Blog" weight=400 height=300 />
 
 
 
@@ -50,6 +50,7 @@
   - 로드 밸런싱은 Scale-Out 방식의 서비스 구성에 주로 사용되며, 네트워크 트래픽을 서비스의 Port 단위로 제어하고, 트래픽을 분산 처리함으로써 높은 가용성과 부하 분산을 통한 고효율 웹 서비스를 제공
 
 
+<br>
 
 **로드 밸런싱 방식**
 
@@ -102,31 +103,31 @@
 
 Amazon ELB는 애플리케이션의 요구사항에 따라 4가지 중 하나의 유형을 선택하여 로드 밸런싱 서비스를 사용할 수 있음
 
-
+<br>
 
 **Application Load Balancer**
 
 - OSI 모델 7계층(Application)에서 작동하며, **HTTP, HTTPS와 같은 고급 로드 밸런싱 서비스에 적합**
 - 마이크로 서비스 및 컨테이너 기반 애플리케이션, 최신 애플리케이션 서비스에 최적화된 로드 밸런싱 제공, SSL/TLS 암호화 및 프로토콜 사용하여 보안성 보장
 
-<img src="https://miro.medium.com/max/1200/0*UCFdX5MLOV2Pt3bL" alt="10 reasons why you should think about using an AWS Application Load Balancer  | by Florian Jakob | Ankercloud Engineering | Medium" style="zoom: 33%;" />
+<img src="https://miro.medium.com/max/1200/0*UCFdX5MLOV2Pt3bL" alt="10 reasons why you should think about using an AWS Application Load Balancer  | by Florian Jakob | Ankercloud Engineering | Medium" weight=400 height=300 />
 
 [이미지 출처](https://medium.com/ankercloud-engineering/10-reasons-why-you-should-think-about-using-an-aws-application-loadbalancer-945f57816c34)
 
-
+<br>
 
 **Network Load Balancer**
 
 - OSI 모델 4계층(Transport Layer)에서 작동하며, **TCP 트래픽의 로드밸런싱 서비스에 적합**
 - 짧은 지연 시간과 초당 수백만 개의 요청 처리가 가능하며, 가용 영역당 1개의 정적 주소를 사용하면서 트래픽의 변동이 심한 서비스에 최적화
 
-<img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/aws-application-deployment-and-monitoring/distribute-traffic-with-elastic-load-balancing/images/ff9ea83eed1829d66798972337355344_c-963-eaf-0-5733-434-e-b-3-f-6-0-a-5-c-6-aad-6-ca-4.png" alt="Distribute Traffic with Elastic Load Balancing Unit | Salesforce" style="zoom:30%;" />
+<img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/aws-application-deployment-and-monitoring/distribute-traffic-with-elastic-load-balancing/images/ff9ea83eed1829d66798972337355344_c-963-eaf-0-5733-434-e-b-3-f-6-0-a-5-c-6-aad-6-ca-4.png" alt="Distribute Traffic with Elastic Load Balancing Unit | Salesforce" weight=400 height=300 />
 
 [이미지 출처](https://trailhead.salesforce.com/ko/content/learn/modules/aws-application-deployment-and-monitoring/distribute-traffic-with-elastic-load-balancing)
 
-<img src="https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2021/09/22/Picture1-3.png" alt="ALB가 NLB의 대상으로 등록된 ALB에 대한 PrivateLink 지원을 보여주는 상위 수준 다이어그램" style="zoom: 50%;" />
+<img src="https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2021/09/22/Picture1-3.png" alt="ALB가 NLB의 대상으로 등록된 ALB에 대한 PrivateLink 지원을 보여주는 상위 수준 다이어그램" weight=400 height=300 />
 
-
+<br>
 
 **Classic Load Balancer**
 
@@ -134,7 +135,7 @@ Amazon ELB는 애플리케이션의 요구사항에 따라 4가지 중 하나의
 - EC2-Classic 네트워크 내에 구축된 애플리케이션을 대상으로 제공
 
 
-
+<br>
 
 
 **Gateway Load Balaner**
@@ -143,7 +144,7 @@ Amazon ELB는 애플리케이션의 요구사항에 따라 4가지 중 하나의
 - IP, 인스턴스를 대상으로 적합, 라우팅 테이블을 통해 연결
 - 최근에 생성된 서비스
 
-<img src="https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2020/11/14/GWLB-Overview-1024x351.png" alt="Integrate your custom logic or appliance with AWS Gateway Load Balancer |  Networking & Content Delivery" style="zoom:50%;" />
+<img src="https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2020/11/14/GWLB-Overview-1024x351.png" alt="Integrate your custom logic or appliance with AWS Gateway Load Balancer |  Networking & Content Delivery" weight=400 height=300 />
 
 
 
