@@ -34,7 +34,7 @@ Bastion Host란 침입 차단 소프트웨어가 설치되어 **내부와 외부
   - Private Subnet : Web Server
 - 다이어그램 by [여기](https://app.diagrams.net/)
 
-<img src="https://blog.kakaocdn.net/dn/IBdK0/btrysBUqX6i/HWGMO9oENSr4qyaZ7Dj1sk/img.png" alt="img" style="zoom: 25%;" />
+<img src="https://blog.kakaocdn.net/dn/IBdK0/btrysBUqX6i/HWGMO9oENSr4qyaZ7Dj1sk/img.png" alt="img" weight=500 height=500 />
 
 
 
@@ -45,6 +45,10 @@ Bastion Host란 침입 차단 소프트웨어가 설치되어 **내부와 외부
 - 퍼블릭, 프라이빗 서브넷 각각 1개
 - NAT 게이트웨이 없음(Bastion Host 설정만 확인하기 위함)
 - 엔드포인트 없음
+
+![1](https://user-images.githubusercontent.com/64996121/161759102-1a2d2331-b499-45f6-9adb-582030db5dcb.png)
+![2](https://user-images.githubusercontent.com/64996121/161759213-fcda8e54-86ff-4a8e-9b27-4f9d9c675e28.png)
+
 
 
 
@@ -76,6 +80,8 @@ Mode                 LastWriteTime         Length Name
 **3) 생성한 키페어 가져오기**
 
 - [키 페어] - [작업] - [키 페어 가져오기]
+![3](https://user-images.githubusercontent.com/64996121/161759243-98c55573-0768-49fb-adab-cc3185641fc8.png)
+![4](https://user-images.githubusercontent.com/64996121/161759290-7d3be5e0-c6e5-48a2-b42f-80610b32a1c4.jpg)
 
 
 
@@ -83,8 +89,13 @@ Mode                 LastWriteTime         Length Name
 
 - [보안 그룹] - [보안 그룹 생성]
 - 외부 네트워크에서 Bastion Host로의 보안 그룹 1개
-- Bastion Host에서 서버로의 보안 그룹 1개
+   - SSH : 내 IP
+![5](https://user-images.githubusercontent.com/64996121/161759356-4f687502-4f54-4dfd-a961-89dcc6395c33.png)
+![6](https://user-images.githubusercontent.com/64996121/161759460-c05232f3-ac77-4cd4-a9fb-d886f74a783c.jpg)
 
+- Bastion Host에서 서버로의 보안 그룹 1개
+   - SSH : 10.0.0.0/20 [퍼블릿 서브넷 CIDR]
+![7](https://user-images.githubusercontent.com/64996121/161759642-51cb22b0-ad65-4669-b100-117ef1ba6e6b.jpg)
 
 
 **5) EC2 인스턴스 생성**(Bastion Host)
@@ -95,6 +106,10 @@ Mode                 LastWriteTime         Length Name
 - VPC 선택
 - Public Subnet
 - 기존 보안 그룹 : myssh_bastion_host
+- 기존 키 페어 사용
+![8](https://user-images.githubusercontent.com/64996121/161760528-83faa60a-dd7b-4011-9c9e-09f6d09078db.png)
+![9](https://user-images.githubusercontent.com/64996121/161760578-c3b3c243-5ae1-42f7-860f-e24d2a902ba6.png)
+![10](https://user-images.githubusercontent.com/64996121/161760649-e97a3651-0fd2-4efb-a465-2400456298d6.png)
 
 
 
@@ -107,6 +122,9 @@ Mode                 LastWriteTime         Length Name
 - Private Subnet
 
 - 기존 보안 그룹 : from_bastion_to_server
+- 기존 키 페어 사용
+![11](https://user-images.githubusercontent.com/64996121/161760697-ed0892e8-20a4-4d49-a57d-ec27f02bbb49.png)
+![Inked12_LI](https://user-images.githubusercontent.com/64996121/161760993-24d01afe-1dd7-4f2f-8b9d-c328d060698c.jpg)
 
 
 
