@@ -22,7 +22,7 @@
 - 고가용성(High Availabiliy, HA) : 정보 시스템이 상당히 오랜 기간 동안 지속적으로 정상 운영이 가능한 성질
 
 - 세븐 나인 : 99.99999의 가용성, 상징적인 의미, 절대로 장애가 일어나면 안되는 서비스들
-- SLA(Service-Level Agreement) : [SLA Calculator]([SLA & Uptime calculator: How much downtime corresponds to 99.9 % uptime](https://uptime.is/))
+- SLA(Service-Level Agreement) : [SLA Calculator](https://uptime.is/)
 
 <br>
 
@@ -100,6 +100,7 @@ systemctl enable httpd
 HOSTNAME=`hostname`
 echo "<h1> ${HOSTNAME} </h1>" > /var/www/html/index.html
 ```
+![0](https://user-images.githubusercontent.com/64996121/161803969-e44a1d41-fdd2-4009-8b62-93180da447c8.png)
 
 
 
@@ -107,9 +108,15 @@ echo "<h1> ${HOSTNAME} </h1>" > /var/www/html/index.html
   - 이미지 생성용이므로, 보안 그룹은 SSH만 열어줌
 
 
+![1](https://user-images.githubusercontent.com/64996121/161804027-e6221617-c5f8-4c14-83d7-f3bc982820d1.png)
+
 
 - 기존 키 페어 사용
   - [Bastion Host 실습](https://nayoungs.tistory.com/113)에서 생성한 키 사용
+
+
+![2](https://user-images.githubusercontent.com/64996121/161804099-59dbf6ce-2810-43aa-a453-cd538703b6a2.png)
+
 
 
 
@@ -155,33 +162,45 @@ echo "<h1> ${HOSTNAME} </h1>" > /var/www/html/index.html
 
 - 이미지 생성 후 EC2 는 종료할 것
 
+![3](https://user-images.githubusercontent.com/64996121/161804187-9e143c41-c8fe-4171-a647-e9535f5ea540.png)
+![4](https://user-images.githubusercontent.com/64996121/161804307-f86377a2-3646-4fb9-9768-9cb11dfcb210.png)
+
 
 
 **4) 시작 템플릿 생성**
 
+![5](https://user-images.githubusercontent.com/64996121/161804346-f554daa9-4d3e-42fa-9200-c43264b53963.png)
+
 - 이름 및 설명, Auto Scaling 체크
 
+![6](https://user-images.githubusercontent.com/64996121/161804366-4d8a0d6f-341f-41d7-8d1f-12f841f4d65a.png)
 
 
 - [내 AMI] - [myweb] 
   - 좀 전에 생성한 AMI 선택
 
+![7](https://user-images.githubusercontent.com/64996121/161804390-d59ba424-204f-4360-9559-cf429faecfe6.png)
 
 
 - 프리티어 t2.micro 선택 및 기존 키 페어 선택
 
+![8](https://user-images.githubusercontent.com/64996121/161804432-c0375bf1-06c8-42df-8353-69f49473421c.png)
 
 
 - 보안 그룹 생성
   - `HTTP`, `SSH`
   - 원본주소는 어디서든지 접속 가능
 
+![9](https://user-images.githubusercontent.com/64996121/161804447-64dfa561-86f4-4e9d-901b-2ddefd8fcd2d.png)
 
 
 **5) Auto Scaling 그룹 생성**
 
+![10](https://user-images.githubusercontent.com/64996121/161804704-43b1e99c-3aa5-46ba-9931-95843a402bb2.png)
+
 - Auto Scaling 이름 및 시작 템플릿 지정(좀 전에 만든 템플릿)
 
+![11](https://user-images.githubusercontent.com/64996121/161804736-a2c0dcf5-2812-43ec-aa80-81c777a50ec7.png)
 
 
 - VPC(default 선택) 및 가용영역, 서브넷 선택
@@ -189,6 +208,7 @@ echo "<h1> ${HOSTNAME} </h1>" > /var/www/html/index.html
   - 가용성에 영향주는 요소
   - 여기서는 4개 모두 선택
 
+![Inked12_LI](https://user-images.githubusercontent.com/64996121/161804926-48ad8315-fa02-4d8d-81bd-e0b14bd144c4.jpg)
 
 
 - 새 로드 밸런서에 연결(생성)
@@ -199,6 +219,9 @@ echo "<h1> ${HOSTNAME} </h1>" > /var/www/html/index.html
   - 대상 그룹 생성 : 일반적으로 로드 밸런서의 백엔드
   - CloudWatch를 통해 모니터링하는 것이 좋음
 
+![13](https://user-images.githubusercontent.com/64996121/161804988-66add60b-70e0-421e-8dae-1cf315124443.png)
+![14](https://user-images.githubusercontent.com/64996121/161805048-60c1a541-a906-4c02-8777-921e409d900c.png)
+![15](https://user-images.githubusercontent.com/64996121/161805072-5dd443df-371e-415a-bf8f-c1e3f1ddd15a.png)
 
 
 - 그룹 크기 선택
@@ -206,6 +229,7 @@ echo "<h1> ${HOSTNAME} </h1>" > /var/www/html/index.html
   - 최소 용량 : Scale-In 
   - 최대 용량 : Scale-Up
 
+![16](https://user-images.githubusercontent.com/64996121/161805098-be3e0fc1-7b00-42f1-91d5-d4fb7809199a.png)
 
 
 - 조정 정책
@@ -220,6 +244,7 @@ echo "<h1> ${HOSTNAME} </h1>" > /var/www/html/index.html
     - 0으로 지정하면 50%를 넘어가는 순간 바로 스케일링(인스턴스 중지)
     - 워밍업 시간이 낮을 수록 좋아 보일 수 있으나, 스케일링이 반복적으로 일어나서  오히려 성능이 저하될 수 있으므로, 어느정도 워밍업 시간을 주는 것이 좋음
 
+![17](https://user-images.githubusercontent.com/64996121/161805136-63cd0ce8-79d6-49a6-ac4c-2e78febff31b.png)
 
 
 - 알림 설정은 하지 않음
@@ -231,6 +256,9 @@ echo "<h1> ${HOSTNAME} </h1>" > /var/www/html/index.html
 
 - Auto Scaling 그룹, 로드밸런서, 대상 그룹, 인스턴스 등이 생성된 것을 확인할 수 있음
 
+![18](https://user-images.githubusercontent.com/64996121/161805219-365245f0-12d4-4b09-87bd-62e60174bfb0.png)
+![19](https://user-images.githubusercontent.com/64996121/161805249-54e0db93-645e-42cb-86e6-2224d6247c59.png)
+![Inked20_LI](https://user-images.githubusercontent.com/64996121/161805432-1f147d6e-0876-4523-9a07-06be0d9d214b.jpg)
 
 
 **7) 오토 스케일링 작동확인을 위해 인스턴스에 부하 주기**
@@ -240,12 +268,19 @@ echo "<h1> ${HOSTNAME} </h1>" > /var/www/html/index.html
 ```shell
 PS C:\Users\USER> ssh ec2-user@[인스턴스 IP주소]
 ```
+- 현재 CPU 사용률이 매우 낮음 
 
-- 부하 주기
+![21](https://user-images.githubusercontent.com/64996121/161805849-69b7e807-3386-4de8-8cab-5d51f710206d.png)
+
+
+- 스케일링 작동을 확인하기 위해 부하 주기
 
 ```shell
 [ec2-user@ip-172-31-0-125 ~]$ sha256sum /dev/zero
 ```
+
+![22](https://user-images.githubusercontent.com/64996121/161806308-6d6b287d-5a91-4bed-bd1c-e70ac0106d30.png)
+
 
 - 인스턴스의 개수가 자동으로 늘어났으면 성공!
 - 시간이 지난 후에도 CPU 사용률이 일정 수준이상을 유지해서 인스턴스가 1개 더 생성되는 것을 확인할 수 있음
