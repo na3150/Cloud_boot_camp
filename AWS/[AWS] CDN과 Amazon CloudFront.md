@@ -67,7 +67,7 @@ Amazon CloudFront는 짧은 지연 시간과 빠른 전송 속도롤 최종 사�
 
 - 실습 주제 : S3 버킷을 통해 부트스트랩을 이용한 반응형 페이지 생성 
   - CloudFront를 통한 속도 향상을 확인하기 위해 이용할 예정
-- [여기]([Free Bootstrap Themes, Templates, Snippets, and Guides - Start Bootstrap](https://startbootstrap.com/))에서 부트스트랩(bootstrap) 템플릿 다운
+- [여기](https://startbootstrap.com/)에서 부트스트랩(bootstrap) 템플릿 다운
 
 
 
@@ -75,11 +75,13 @@ Amazon CloudFront는 짧은 지연 시간과 빠른 전송 속도롤 최종 사�
 
 - 버킷 이름 및 리전 설정
 
-![image-20220406165040245](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220406165040245.png)
+![a](https://user-images.githubusercontent.com/64996121/161940916-cd144609-b685-47d0-b7f6-25baa59ccbc5.png)
+
+
 
 - 모든 퍼블릭 액세스 차단 해제 및 퍼블릭 상태가 될 수 있음을 확인 
 
-![image-20220406165118965](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220406165118965.png)
+![3](https://user-images.githubusercontent.com/64996121/161940990-ee6b3010-1d54-4143-add0-7867e46c83c2.png)
 
 - 업로드
 
@@ -93,16 +95,15 @@ Amazon CloudFront는 짧은 지연 시간과 빠른 전송 속도롤 최종 사�
 - Actions : GetObject 선택
 - 버킷 ARN 붙여넣기
 
-![image-20220406165645975](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220406165645975.png)
+![정책 생성기](https://user-images.githubusercontent.com/64996121/161941096-5d3ea721-8197-4ed0-b97c-fa2791d9bc47.png)
 
 - [Add Statement] - [JSON Document 복사]
 
-![image-20220406165848017](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220406165848017.png)
+![정책생성기2](https://user-images.githubusercontent.com/64996121/161941110-3e73bb50-5961-42a4-82a1-9732245a533e.png)
 
 - 복사한 JSON 을 정책에 붙여넣기
 
-![image-20220406165913956](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220406165913956.png)
-
+![정책생성기3](https://user-images.githubusercontent.com/64996121/161941126-35aee301-b3f4-49d5-b007-a9c12dfdfded.png)
 
 
 **3) 버킷에 파일 업로드**
@@ -111,7 +112,7 @@ Amazon CloudFront는 짧은 지연 시간과 빠른 전송 속도롤 최종 사�
 
 - 다운 받은 파일 압축 해제 후 업로드
 
-![image-20220406170651214](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220406170651214.png)
+![4](https://user-images.githubusercontent.com/64996121/161941163-2cc393f9-8a21-4690-b71b-d1ace00b8d2f.png)
 
 
 
@@ -123,18 +124,18 @@ Amazon CloudFront는 짧은 지연 시간과 빠른 전송 속도롤 최종 사�
 - 호스팅 유형 : 정적 웹 사이트 호스팅
 - 인덱스 문서 : index.html
 
-![image-20220406170028015](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220406170028015.png)
+![6](https://user-images.githubusercontent.com/64996121/161941197-03385974-a1a2-4315-b7b7-ca8ff53c00b4.png)
 
 
 
 **5) 정적 웹 호스트 엔트포인트로 접속**
 
-![ㄴㅇㅎㅁㄴ](C:\Users\USER\Desktop\ㄴㅇㅎㅁㄴ.png)
+![ㄴㅇㅎㅁㄴ](https://user-images.githubusercontent.com/64996121/161941294-201d42fc-d229-45d6-b8df-29e1c86b79e2.png)
 
 - CloudFront와의 비교를 위해 속도확인(개발자 모드 F12)
   - 속도 : 632ms
 
-![image-20220406171115495](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220406171115495.png)
+![부트스트랩 완성(f12)](https://user-images.githubusercontent.com/64996121/161941390-3af35350-ad9a-45e9-b2f6-dfc75488cc33.png)
 
 <br>
 
@@ -150,19 +151,19 @@ Amazon CloudFront는 짧은 지연 시간과 빠른 전송 속도롤 최종 사�
 
 - [CloudFront] - [배포] - [배포 생성]
 
-![ㄹㄹㄹ](C:\Users\USER\Desktop\ㄹㄹㄹ.png)
+![ㄹㄹㄹ](https://user-images.githubusercontent.com/64996121/161941425-c2143fcf-ebd2-4516-a26a-2eaad25e525f.png)
 
-![image-20220406173802491](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220406173802491.png)
+![ㄹㄹㄹ](https://user-images.githubusercontent.com/64996121/161941482-292670b3-d267-4213-aa01-e8aa3863e82a.png)
 
 
 
 **2) CloudFront 배포 도메인으로 접속하기**
 
-![image-20220406174019978](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220406174019978.png)
+![8](https://user-images.githubusercontent.com/64996121/161941593-635af020-7b56-4241-b8d4-bb187bb56ac1.png)
 
 - S3 버킷에 파일을 드래그하여(하나의 폴더가 묶이지 않은 상태로) 업로드했다면 경로 뒤에 index.html 붙여주기!
 
-![image-20220406174025725](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220406174025725.png)
+![9](https://user-images.githubusercontent.com/64996121/161941555-8d73ec53-6780-4d5e-90ba-33289327401e.png)
 
 
 
@@ -171,4 +172,5 @@ Amazon CloudFront는 짧은 지연 시간과 빠른 전송 속도롤 최종 사�
 - 속도 : 337 ms
 - 632ms -> 337ms 로, CloudFront로 배포함으로써 속도가 훨씬 빨라진 것을 확인할 수 있음
 
-![image-20220406174902340](C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220406174902340.png)
+![10](https://user-images.githubusercontent.com/64996121/161941704-afb2ea26-29f4-405f-80da-ffb082f918a8.png)
+
