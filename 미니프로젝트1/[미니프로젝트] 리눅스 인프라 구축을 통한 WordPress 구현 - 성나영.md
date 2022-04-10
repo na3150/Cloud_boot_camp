@@ -10,66 +10,10 @@
 
 
 
-<center><h3>「미니 프로젝트 1」 결과보고서</h3><center></center> 
-    <h4>리눅스 인프라 구축을 통한 WordPress구현</h4>
+<h3>「미니 프로젝트 1」 결과보고서</h3>
+<h4>리눅스 인프라 구축을 통한 WordPress구현</h4>
+<h4>프로젝트 참여자: 2022_s3_성나영</h4>
 
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br><br>
-
-<br><br>
-
-<br><br>
-
-<br><br>
-
-<br>
-
-<br>
-
-<br>
-
-<br><br>
-
-<br><br>
-
-<br>
-
-<center><h4>프로젝트 참여자: 2022_s3_성나영</h4><center>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
 
 <br>
 
@@ -104,40 +48,6 @@
 
 **3.프로젝트 최종 결과**
 
-<br>
-
-<br><br><br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br><br>
-
-<br><br>
-
-<br><br>
-
 <br><br>
 
 <br>
@@ -160,10 +70,10 @@
 
 - 환경 구성
 
-| <img src="https://images.velog.io/images/kdh10806/post/589f5ddd-a1c9-4bfc-b2e4-7b213f732374/Google_Chrome_logo_and_wordmark_(2015).png" alt="chrome - velog" style="zoom:32%;" /> | 인프라 구축 완료 후 도메인 접속 확인을 위해 사용             |
+| <img src="https://images.velog.io/images/kdh10806/post/589f5ddd-a1c9-4bfc-b2e4-7b213f732374/Google_Chrome_logo_and_wordmark_(2015).png" alt="chrome - velog" width=300 /> | 인프라 구축 완료 후 도메인 접속 확인을 위해 사용             |
 | ------------------------------------------------------------ | :----------------------------------------------------------- |
-| <img src="https://user-images.githubusercontent.com/64996121/159122795-657ac14d-76e0-4d4a-bbab-df4750ecb79f.png" alt="image" style="zoom: 47%;" /> | **DB server, Web server, DNS server를 리눅스로 운영하기 위해 사용** |
-| <img src="file:///C:\Users\USER\AppData\Local\Temp\tmpFF23.jpg" alt="그림입니다.  원본 그림의 이름: mem00001ce40001.tmp  원본 그림의 크기: 가로 318pixel, 세로 159pixel" style="zoom: 39%;" /> | **CentOS 환경을 구축하기 위해 설치한 가상화 소프트웨어**     |
+| <img src="https://user-images.githubusercontent.com/64996121/159122795-657ac14d-76e0-4d4a-bbab-df4750ecb79f.png" alt="image" width=300 /> | **DB server, Web server, DNS server를 리눅스로 운영하기 위해 사용** |
+| <img src="https://user-images.githubusercontent.com/64996121/162645341-02a44943-a246-4e3e-8d93-2bef3f3d4af4.png" alt="그림입니다.  원본 그림의 이름: mem00001ce40001.tmp  원본 그림의 크기: 가로 318pixel, 세로 159pixel" width=300 /> | **CentOS 환경을 구축하기 위해 설치한 가상화 소프트웨어**     |
 
 
 
