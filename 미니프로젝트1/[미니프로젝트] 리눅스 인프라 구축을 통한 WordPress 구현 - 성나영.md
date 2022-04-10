@@ -1019,5 +1019,5 @@ Email Address []:admin@ny.project.com
 
 - **https로 접속하기**
 
-<img src="C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20220411083449766.png" alt="그림입니다.  원본 그림의 이름: https 접속.PNG  원본 그림의 크기: 가로 1902pixel, 세로 814pixel" style="zoom: 80%;" />    
+<img src="https://user-images.githubusercontent.com/64996121/162645383-aee33894-7c21-4835-9aeb-4316b3aa35fb.png" alt="그림입니다.  원본 그림의 이름: https 접속.PNG  원본 그림의 크기: 가로 1902pixel, 세로 814pixel" style="zoom: 80%;" />    
 
