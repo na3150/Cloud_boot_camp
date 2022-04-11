@@ -107,7 +107,7 @@
 
 - 서버 구조도
 
-  <img src="file:///C:\Users\USER\AppData\Local\Temp\tmp932E.jpg" alt="그림입니다.  원본 그림의 이름: 서버 구조도.PNG  원본 그림의 크기: 가로 1062pixel, 세로 640pixel" style="zoom: 33%;" /> 
+  <img src="https://user-images.githubusercontent.com/64996121/162645771-0cfdc32a-7299-46b5-af56-a27d91bc64df.png" alt="그림입니다.  원본 그림의 이름: 서버 구조도.PNG  원본 그림의 크기: 가로 1062pixel, 세로 640pixel" width=500/> 
 
 <h4>1-4. 프로젝트 일정</h4>
 
