@@ -628,7 +628,7 @@ DocumentRoot "/var/www/html/wordpress"
 
   - php의 MySQL 확장패키지를 설치함으로써 문제를 해결할 수 있었음
 
-    <img src="C:\Users\USER\Desktop\php 오류.PNG" alt="그림입니다.  원본 그림의 이름: CLP00001ce40001.bmp  원본 그림의 크기: 가로 1020pixel, 세로 192pixel" style="zoom: 67%;" />  
+    <img src="https://user-images.githubusercontent.com/64996121/162645629-3988cffe-355d-4647-b4c8-0aabe78dd6a7.PNG" alt="그림입니다.  원본 그림의 이름: CLP00001ce40001.bmp  원본 그림의 크기: 가로 1020pixel, 세로 192pixel" style="zoom: 67%;" />  
 
 ```
 [root@localhost ~]# yum install php php-mysql
