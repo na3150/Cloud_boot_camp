@@ -82,7 +82,7 @@ IaC란 Infrastructure as Code(코드형 인프라)의 약자로, 수동 프로�
 
 
 
-![004](https://raw.githubusercontent.com/na3150/typora-img/main/img/004.jpg?token=APP4GGPVRXK7ZMR5W2TKYV3CKWAWU)
+![image](https://user-images.githubusercontent.com/64996121/162985981-62d3dd58-c55b-4eab-aa92-1ea366dc2819.png)
 
 
 
