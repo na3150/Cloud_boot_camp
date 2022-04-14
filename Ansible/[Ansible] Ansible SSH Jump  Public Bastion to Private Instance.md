@@ -22,7 +22,7 @@ Ansible -> Bastion 으로 SSH 접속할 때와, Bastion -> Private Instance로 �
 
 
 
-![image-20220414191616729](https://raw.githubusercontent.com/na3150/typora-img/main/img/image-20220414191616729.png?token=APP4GGIQXEJDGT26UNG3QJDCK72K4)
+![ansible ssh jump architechture drawio](https://user-images.githubusercontent.com/64996121/163371397-a1bdec5c-163b-478f-83a8-786dcafd618c.png)
 
 
 
@@ -43,15 +43,15 @@ Ansible -> Bastion 으로 SSH 접속할 때와, Bastion -> Private Instance로 �
 
 - 복사한 키를 붙여넣기
 
-![image-20220414163109997](https://raw.githubusercontent.com/na3150/typora-img/main/img/image-20220414163109997.png?token=APP4GGNFXSPT4TDRKFIB4VTCK7G7Y)
-
+![Inked키 내용_LI](https://user-images.githubusercontent.com/64996121/163371591-6848d09c-d140-4c92-9a5e-6c250c58624c.jpg)
 
 
 ##### 3. Private Subnet 생성
 
 - default vpc 에서 생성
 
-![image-20220414164118131](https://raw.githubusercontent.com/na3150/typora-img/main/img/image-20220414164118131.png?token=APP4GGNKF2S2I5QJO2EYSQLCK7IFY)
+
+![private서브넷 생성](https://user-images.githubusercontent.com/64996121/163371873-d9180224-b715-43ec-b8f9-60df7415ff79.png)
 
 
 
@@ -61,7 +61,7 @@ Ansible -> Bastion 으로 SSH 접속할 때와, Bastion -> Private Instance로 �
 - default vpc public subnet에 생성
 - 보안을 위해 내IP에서의 SSH 트래픽만 허용
 
-![image-20220414163715023](https://raw.githubusercontent.com/na3150/typora-img/main/img/image-20220414163715023.png?token=APP4GGJPTW3QCVXV3RQ5DADCK7HWU)
+![Inkedbastion 생성_LI](https://user-images.githubusercontent.com/64996121/163371706-8d974f17-89e0-4a85-870a-8528cf3e48c2.jpg)
 
 
 
@@ -224,7 +224,7 @@ uid=1000(ec2-user) gid=1000(ec2-user) groups=1000(ec2-user),4(adm),10(wheel),190
 
 두번째 방법은 Inventory 파일에 `ansible_ssh_common_args` 변수를 정의하여 jump하는 방법이다.
 
-- [샘플](https://www.jeffgeerling.com/blog/2022/using-ansible-playbook-ssh-bastion-jump-host)
+- [Sample](https://www.jeffgeerling.com/blog/2022/using-ansible-playbook-ssh-bastion-jump-host)
   - `ansible_ssh_common_args` 변수를 정의하면 ssh 접속을 할 때마다 변수의 값(설정)이 적용됨(옵션이 붙게됨)
   - `-p` : Port
   - `-w` : stdin과 sdout을 해당되는 호스트(%h)와 포트(%p)로 넘겨줌
