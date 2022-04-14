@@ -37,7 +37,7 @@
 
 
 
-**2. ** `~/.ansible.cfg` 에 inventory 지정 및 설정
+**2. `~/.ansible.cfg` 에 inventory 지정 및 설정**
 
 ```shell
 [vagrant@controller ~]$ cat ~/.ansible.cfg
@@ -147,7 +147,7 @@ wordpress
 
 **10. `http://ip/wordpress`로 wordpress 접속해보기**
 
-![wordpress 접속](wordpress 접속.PNG)
+![wordpress 접속](https://user-images.githubusercontent.com/64996121/163404616-b4ee7f38-251a-49ad-a141-7447dbbd436a.PNG)
 
 - 만약 이미지가 깨져보이거나(인터페이스가 이상) 보안상 Testing Page(defualt Page)가 보이지 않게 하고 싶다면?
   - `replace` 모듈을 사용하여 index.html -> index.php로 변경해보자
@@ -241,7 +241,8 @@ MariaDB [(none)]> show databases;
 
 - 정보입력 후 [워드프레스 설치] 버튼을 눌렀을 때 데이터베이스 스키마(schema)가 생성됨
 
-![wordpress 가입](https://raw.githubusercontent.com/na3150/typora-img/main/img/wordpress%20%EA%B0%80%EC%9E%85.PNG?token=APP4GGJQLABGKJNGPBMIWVTCLAOWY)
+![wordpress 가입](https://user-images.githubusercontent.com/64996121/163404787-85b93dbf-c602-4617-9a86-99763c370b89.PNG)
+
 
 - 스키마 생성확인
 
