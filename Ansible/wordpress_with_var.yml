@@ -1,0 +1,85 @@
+- hosts: wp
+  vars:
+    php:
+      remi_repo: 
+        pkg: https://rpms.remirepo.net/enterprise/remi-release-7.rpm
+        safe_mirror: http://cdn.remirepo.net/enterprise/7/safe/mirror 
+        php74_mirror: http://cdn.remirepo.net/enterprise/7/php74/mirror
+        gpgkey_path: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
+    wp_pkg: httpd,php,php-mysqlnd,mariadb,mariadb-server,python2-PyMySQL
+    wp_version: "5.9.3"
+    wp_file_name: 'wordpress-{{ wp_version }}.tar.gz'
+    wp_source_url: 'https://wordpress.org/{{ wp_file_name }}'
+    mysql:
+      dbname: wordpress
+      dbuser: wpadm
+      dbpwd: P@ssw0rd
+
+  tasks:
+    - yum:
+        name: '{{ php["remi_repo"]["pkg"] }}'
+        state: present
+        validate_certs: no
+    - yum_repository:
+        name: remi-safe
+        file: remi-safe
+        mirrorlist: '{{ php["remi_repo"]["safe_mirror"] }}'
+        description: remi-safe 
+        enabled: no
+    - yum_repository:
+        name: remi-php74
+        file: remi-php74
+        mirrorlist: '{{ php["remi_repo"]["php74_mirror"] }}'
+        description: remi-php74 
+        enabled: yes
+        gpgcheck: yes
+        gpgkey: '{{ php["remi_repo"]["gpgkey_path"] }}'
+    - yum:
+        name: "{{ wp_pkg }}"
+        state: installed
+    - service:
+        name: httpd 
+        state: started 
+        enabled: yes
+    - service:
+        name: mariadb
+        state: started
+        enabled: yes
+    - get_url:
+        url: '{{ wp_source_url }}'
+        dest: /home/vagrant
+    - unarchive:
+        src: '/home/vagrant/{{ wp_file_name }}'
+        remote_src: yes 
+        dest: /var/www/html 
+        owner: apache 
+        group: apache
+    - mysql_db:
+        name: '{{ mysql["dbname"] }}'
+        state: present 
+        login_user: root
+    - mysql_user:
+        name: '{{ mysql["dbuser"] }}' 
+        password: '{{ mysql["dbpwd"] }}' 
+        state: present 
+        login_user: root 
+        priv: '{{ mysql["dbname"] }}.*:ALL'
+    - copy:
+        src: /var/www/html/wordpress/wp-config-sample.php 
+        remote_src: yes 
+        dest: /var/www/html/wordpress/wp-config.php 
+        owner: apache 
+        group: apache
+    - replace:
+        path: /var/www/html/wordpress/wp-config.php 
+        regexp: database_name_here 
+        replace: '{{ mysql["dbname"] }}'
+    - replace:
+        path: /var/www/html/wordpress/wp-config.php 
+        regexp: username_here 
+        replace: '{{ mysql["dbuser"] }}'
+    - replace:
+        path: /var/www/html/wordpress/wp-config.php 
+        regexp: password_here 
+        replace: '{{ mysql["dbpwd"] }}'
+

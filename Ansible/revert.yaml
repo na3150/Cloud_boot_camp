@@ -1,0 +1,25 @@
+- hosts: wp
+  tasks:
+    - service:
+        name: httpd
+        state: stopped
+    - service:
+        name: mariadb
+        state: stopped
+    - file:
+        path: /var/www/html/wordpress
+        state: absent
+    - file:
+        path: /home/vagrant/wordpress-5.9.3.tar.gz
+        state: absent
+    - yum:
+        name: httpd,php,php-mysqlnd,mariadb,mariadb-server,python2-PyMySQL
+        state: absent
+        autoremove: yes
+    - file:
+        name: /var/lib/mysql
+        state: absent
+    - yum:
+        name: remi-release
+        autoremove: yes
+        state: absent
