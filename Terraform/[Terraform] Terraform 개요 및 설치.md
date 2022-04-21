@@ -26,7 +26,7 @@
 
 - HCL(Hashicorp Configuration Language) 사용 <--- DSL(Domain Specific Language)
 
-**❕ Workflow **
+**❕ Workflow**
 
 - **코드 작성(Write)** : HCL 사용
 - **계획(Plan)** : ansible의 `--check`옵션과 유사(시뮬레이션)
@@ -252,21 +252,7 @@ resource "aws_instance" "app_server" {
 $ terraform init
 ```
 
-`.terraform`은 절대 직접 수정하면 안됨 + 공유하면 안됨 + git에도 올리면 안됨
-
-```shell
-$ tree .terraform
-.terraform
-└── providers
-    └── registry.terraform.io
-        └── hashicorp
-            └── aws
-                └── 3.75.1
-                    └── linux_amd64
-                        └── terraform-provider-aws_v3.75.1_x5 #프로바이더
-
-6 directories, 1 file
-```
+참고) `.terraform`은 절대 직접 수정하면 안됨 + 공유하면 안됨 + git에도 올리면 안됨
 
 - 프로바이더가 tf 코드를 받아서 api로 바꿔서 실행해줌 => 프로바이더는 반드시 있어야함
 
