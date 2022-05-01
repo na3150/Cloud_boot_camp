@@ -8,8 +8,6 @@
 ├── output.tf
 ├── provider.tf
 ├── security_group.tf
-├── terraform.tfstate
-├── terraform.tfstate.backup
 ├── variable.tf
 ├── vpc.tf
 └── wp
