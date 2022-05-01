@@ -1,0 +1,11 @@
+---
+- hosts : all
+  become : true
+  vars_files:
+    - /home/adminuser/wp/roles/apache/vars/main.yaml
+    - /home/adminuser/wp/roles/wordpress/vars/main.yaml
+
+  roles :
+    - apache
+    - wordpress
+    
