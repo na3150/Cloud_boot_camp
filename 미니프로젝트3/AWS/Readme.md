@@ -6,15 +6,27 @@
 ├── db.tf
 ├── main.tf
 ├── output.tf
-├── play-ansible.sh
 ├── provider.tf
 ├── security_group.tf
 ├── terraform.tfstate
 ├── terraform.tfstate.backup
-├── terraform.tfvars
 ├── variable.tf
 ├── vpc.tf
-└── wordpress.yaml
+└── wp
+    ├── roles
+    │   ├── apache
+    │   │   ├── tasks
+    │   │   │   └── main.yaml
+    │   │   └── vars
+    │   │       └── main.yaml
+    │   └── wordpress
+    │       ├── tasks
+    │       │   └── main.yaml
+    │       ├── templates
+    │       │   └── wp-config.php.j2
+    │       └── vars
+    │           └── main.yaml
+    └── wordpress.yaml
 ```
 <br>
 <br>
