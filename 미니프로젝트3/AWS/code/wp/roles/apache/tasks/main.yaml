@@ -1,0 +1,50 @@
+# Amazon Linux 사용을 위한 기본 설정
+- name: "amazon linux2 setting"  
+  block: 
+    - name: "install epel"
+      command:
+          cmd: sudo amazon-linux-extras install -y epel  
+    - name: "install dependency"               
+      command: 
+          cmd: sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+  when: ansible_facts['distribution'] == "Amazon"  
+ # Remi Repo 및 PHP 74 설치 
+- name: Setting PHP 7.4 remi repo
+  block:
+    - name: Install Remi Repo package from URL
+      yum:
+        name: "{{remi_repo['url']}}"
+        state: present
+        validate_certs: no
+    - name: Remi-Safe OFF
+      yum_repository:
+        name: "{{remi_safe['name']}}"
+        file: "{{remi_safe['name']}}"
+        mirrorlist: "{{remi_safe['mirror']}}"
+        description: "{{remi_safe['name']}}"
+        enabled: no
+    - name: Install PHP74
+      yum_repository:
+        name: "{{php74['name']}}"
+        file: "{{php74['name']}}"
+        mirrorlist: "{{php74['mirror']}}"
+        description: "{{php74['name']}}"
+        enabled: yes
+        gpgcheck: yes
+        gpgkey: "{{php74['gpgkey']}}"
+
+# Apache 관련 패키지 다운 후 실행
+- name: Download and Start Packages for Apache
+  block:
+    - name: Install Packages
+      yum:
+        name: "{{apache_pkg['pkg']}}"
+        state: installed
+    - name: Start Services
+      service:
+        name: "{{ item }}"
+        state: started 
+        enabled: yes
+      loop:
+        - httpd
+        - mariadb

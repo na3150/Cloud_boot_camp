@@ -1,0 +1,46 @@
+# Wordpress 다운 및 압축 해제
+- name: Download Wordpress From Internet
+  block: 
+  - name: Install Compressed Wordpress
+    get_url:
+        url: "{{wp_url}}"
+        dest: "{{remote_dest}}"
+  - name: Unarchive Wordpress
+    unarchive:
+        src: "{{remote_dest}}/{{wp_filename}}"
+        remote_src: yes
+        dest: /var/www/html
+        owner: apache
+        group: apache
+
+# Wordpress에서 사용할 데이터베이스 만들기
+- name: Setup Wordpress DB
+  block:
+    - name: Make Database
+      mysql_db:
+        name: wordpress
+        state: present
+        login_user: root
+    - name: Create user and Set Privileges
+      mysql_user:
+        name: "{{database['user']}}"
+        password: "{{database['pwd']}}"
+        state: present
+        login_user: root
+        priv: "{{database['name']}}.*:ALL"
+
+# Wordpress 설정 수정
+- name: Configure Database for Wordpress
+  block:
+  - name: Copy Database Configure File for Wordpress
+    template:
+      src: ~/wp/roles/wordpress/templates/wp-config.php.j2
+      dest: /var/www/html/wordpress/wp-config.php
+      owner: apache
+      group: apache
+
+# HTTPD 데몬 재시작 -> hander로 만들기..?
+- name: Restart Apache
+  service:
+    name: httpd
+    state: restarted

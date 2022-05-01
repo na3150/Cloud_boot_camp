@@ -1,0 +1,15 @@
+---
+# Wordpress Package
+wp_version: 5.9.3
+wp_filename: "wordpress-{{ wp_version }}.tar.gz"
+wp_url: "https://wordpress.org/{{wp_filename}}"
+
+# Wordpress Destination
+remote_dest: "/home/ec2-user"
+
+# Database Configure
+database:
+  name: wordpress
+  user: wordpress
+  pwd: skdud3150
+  host: rdsendpoint
