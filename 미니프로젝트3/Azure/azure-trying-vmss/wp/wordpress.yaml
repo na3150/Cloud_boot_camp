@@ -1,0 +1,11 @@
+---
+- hosts : all
+  become : true
+  vars_files:
+    - /home/vagrant/azure-trying-vmss/wp/roles/apache/vars/main.yaml
+    - /home/vagrant/azure-trying-vmss/wp/roles/wordpress/vars/main.yaml
+
+  roles :
+    - apache
+    - wordpress
+    
