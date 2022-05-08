@@ -1,12 +1,9 @@
 
-### Packer
+### Packer File
 `packer`
 <br>
-### Ansible
+### Ansible File
 `wp`
-<br>
-### Terraform
-`azure-trying-vmss`
 <br>
 ### Tree
 ```shell
