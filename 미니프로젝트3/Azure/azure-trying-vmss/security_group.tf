@@ -17,26 +17,8 @@ resource "azurerm_network_security_group" "bastion-sg" {
   }
 }
 
-#Wordpress VM sg HTTP
-resource "azurerm_network_security_group" "wp-sg" {
-  name                = "wp-sg"
-  location            = azurerm_resource_group.wp-rg.location
-  resource_group_name = azurerm_resource_group.wp-rg.name
 
-  security_rule {
-    name                       = "HTTP"
-    priority                   = 1001
-    direction                  = "Inbound"
-    access                     = "Allow"
-    protocol                   = "Tcp"
-    source_port_range          = "*"
-    destination_port_range     = "*"
-    source_address_prefix      = "*"
-    destination_address_prefix = "*"
-  }
-}
-
-#Wordpress VM sg HTTP
+#Wordpress VMSS sg
 resource "azurerm_network_security_group" "vmss-sg" {
   name                = "wmss-sg"
   location            = azurerm_resource_group.wp-rg.location
