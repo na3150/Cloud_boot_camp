@@ -8,9 +8,9 @@ Docker image가 레이어(Layer)를 가지는 이유를 먼저 설명하자면, 
 
 `docker run <image>` 를 통해 이미지로 컨테이너를 생성할 경우 **기존의 이미지 레이어들 위에 `conatiner layer` 가 생성된다.**
 
-즉, commit 할 때마다 새로운 내용을 레이어에 쌓아가는 것이다.
+즉, **commit 할 때마다 새로운 내용을 레이어에 쌓아가는 것**이다.
 
-**기존 이미지의 레이어는 `Read-Only`(변경 불가)**이고, 기존 레이어 위에 **새로 생성된 레이어는 `Read-Write`(변경 가능)**이며,
+**기존 이미지의 레이어는 `Read-Only`(변경 불가)** 이고, 기존 레이어 위에 **새로 생성된 레이어는 `Read-Write`(변경 가능)** 이며,
 
 기존 이미지 레이어는 삭제되지 않지만 컨테이너 레이어(생성된 layer)는 해당 컨테이너가 종료될 경우 같이 소멸된다
 
@@ -39,6 +39,8 @@ Docker image가 레이어(Layer)를 가지는 이유를 먼저 설명하자면, 
 ```shell
 $ docker image inspect ubuntu --format '{{ .RootFS }}' 
 ```
+
+<br>
 
 **`docker save`** 명령어로 파일 직접 확인하기
 
@@ -77,7 +79,7 @@ Docker Image가 layer를 사용하는 이유(데이터 저장의 효율성)를 �
 
 <brr>
 
-**`aufs`은`ufs`(Union File System)**에서 파생된 것으로, 여기서 union은 **여러개의 레이어를 하나인 것처럼 결합**시켜주는 시스템이다.
+**`aufs`은`ufs`(Union File System)** 에서 파생된 것으로, 여기서 union은 **여러개의 레이어를 하나인 것처럼 결합**시켜주는 시스템이다.
 
 Docker에서 초기에는 `aufs`파일 시스템을 사용했었으나,  `overlay2`로 변경하였다. 
 
