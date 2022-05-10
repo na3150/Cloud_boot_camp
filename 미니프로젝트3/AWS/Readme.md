@@ -1,4 +1,4 @@
-### 💻 Terraform과 Ansible을 활용한 AWS loud의 Wordpress 배포
+### 💻 Terraform과 Ansible을 활용한 AWS Cloud로의 Wordpress 배포
 <br>
 
 **✔️ Outputs**
