@@ -62,7 +62,7 @@ INSTRUCTION arguments
 
 #### FROM
 
-[FROM]([Dockerfile reference | Docker Documentation](https://docs.docker.com/engine/reference/builder/#from))
+[FROM](https://docs.docker.com/engine/reference/builder/#from)
 
 `Base Image`를 지정하는 것으로, 가능한한 latest는 사용하지 않는다.
 
