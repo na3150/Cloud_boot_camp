@@ -4,9 +4,9 @@
 
 ### 📌Index
 
-- [python:3.9-buster 이미지 사용하기](#python:3.9-buster-이미지-사용하기)
-- [python:3.9-slim-buster 이미지 사용하기](#python:3.9-slim-buster-이미지-사용하기)
-- [python:3.9-alpine 이미지 사용하기](#python:3.9-alpine-이미지-사용하기)
+- [python:3.9-buster 이미지 사용하기](#python39-buster-이미지-사용하기)
+- [python:3.9-slim-buster 이미지 사용하기](#python39-slim-buster-이미지-사용하기)
+- [python:3.9-alpine 이미지 사용하기](#python39-alpine-이미지-사용하기)
 
 <br>
 
