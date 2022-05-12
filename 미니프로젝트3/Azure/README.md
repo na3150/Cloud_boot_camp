@@ -7,5 +7,5 @@ Terraform code with Virtual Machine Scale Set and Packer
 ### 📂 code
 
 ```
-Terraform code without Virtual Machine Scale Set
+Terraform code without Virtual Machine Scale Set and Packer
 ```
