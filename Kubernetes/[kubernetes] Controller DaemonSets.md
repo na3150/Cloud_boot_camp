@@ -51,7 +51,7 @@ daemonsets                        ds           apps/v1                          
 
 <br>
 
-##### Selector
+### Selector
 
 `matchExpression`가 파드의 `label`과 `AND`연산으로 매칭이 되어야한다
 
