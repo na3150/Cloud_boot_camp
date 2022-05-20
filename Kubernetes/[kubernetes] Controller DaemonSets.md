@@ -1,6 +1,6 @@
 # [kubernetes] Controller: DaemonSets
 
-[데몬셋]([데몬셋 | Kubernetes](https://kubernetes.io/ko/docs/concepts/workloads/controllers/daemonset/))은 모든 노드의 파드를 실행하도록 하며, `daemonset`(DS)은 일반적으로 `systemctl`에서 제어하는 모는 것을 의미한다.
+[데몬셋](https://kubernetes.io/ko/docs/concepts/workloads/controllers/daemonset/)은 모든 노드의 파드를 실행하도록 하며, `daemonset`(DS)은 일반적으로 `systemctl`에서 제어하는 모는 것을 의미한다.
 
 (스케쥴러를 조정하면, 일부로 조절 가능하긴하다)
 
@@ -36,7 +36,7 @@ nodelocaldns   3         3         3       3            3           kubernetes.i
 
 - `nodelocaldns`는 `dns` 서버이다.
 
-- `calico-node`는 실제 구현체이다??
+- `calico-node`는 실제 네트워크 구현체이다.
 
 <br>
 
