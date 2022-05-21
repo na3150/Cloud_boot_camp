@@ -184,7 +184,7 @@ LISTEN   0         4096                 0.0.0.0:30749            0.0.0.0:*      
 
 <br>
 
-<img src="https://raw.githubusercontent.com/na3150/typora-img/main/img/kubernetes-nodeport-diagram.svg" alt="kubernetes-nodeport-diagram" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/na3150/typora-img/main/img/Untitled%20Diagram.drawio.svg" alt="Untitled Diagram.drawio" style="zoom:67%;" />
 
 <br>
 
