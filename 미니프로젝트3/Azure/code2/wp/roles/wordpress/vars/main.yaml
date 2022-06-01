@@ -1,0 +1,16 @@
+---
+# Wordpress Package
+wp_version: 5.9.3
+wp_filename: "wordpress-{{ wp_version }}.tar.gz"
+wp_url: "https://wordpress.org/{{wp_filename}}"
+
+# Wordpress Destination
+remote_dest: "/home/vagrant"
+
+# Database Configure
+database:
+  name: wordpress
+  user: wordpress
+  pwd: p@ssw0rd
+  host: wp-mdb-server-d.mariadb.database.azure.com
+  utf: utf8_general_ci

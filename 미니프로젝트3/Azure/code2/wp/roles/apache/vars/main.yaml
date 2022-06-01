@@ -1,0 +1,15 @@
+---
+remi_repo:
+  url: https://rpms.remirepo.net/enterprise/remi-release-7.rpm
+
+remi_safe:
+  name: remi-safe
+  mirror: http://cdn.remirepo.net/enterprise/7/safe/mirror
+
+php74:
+  name: remi-php74
+  mirror: http://cdn.remirepo.net/enterprise/7/php74/mirror
+  gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
+
+apache_pkg:
+  pkg: httpd,php,php-mysqlnd,mariadb,mariadb-server,python2-PyMySQL
