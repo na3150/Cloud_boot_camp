@@ -10,8 +10,8 @@ Create VMs with a count loop and load balancing to the VMs
 
 - 보고서
 - [발표 ppt](https://github.com/na3150/Cloud_boot_camp/blob/main/%EB%AF%B8%EB%8B%88%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B83/%EB%AF%B8%EB%8B%88%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B83%20%EB%B0%9C%ED%91%9C%20ppt%20%EC%B5%9C%EC%A2%85%EB%B3%B8.pdf)
-  <br>
 
+<br>
 
 ✔️ **아키텍처(Architecture)**
 
