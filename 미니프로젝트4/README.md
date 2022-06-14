@@ -10,7 +10,7 @@
 
 **✔️Demo Video**
 
-![image-20220614185726264](https://raw.githubusercontent.com/na3150/typora-img/main/img/image-20220614185726264.png)
+![미니프로젝트4 demo 영상(2배속)](https://raw.githubusercontent.com/na3150/typora-img/main/img/%EB%AF%B8%EB%8B%88%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B84%20demo%20%EC%98%81%EC%83%81(2%EB%B0%B0%EC%86%8D).gif)
 
 <br>
 
