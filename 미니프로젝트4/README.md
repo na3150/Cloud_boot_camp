@@ -18,6 +18,8 @@
 
 ### ✔️System Architecture
 
+<br>
+
 ![architecture](https://raw.githubusercontent.com/na3150/typora-img/main/img/architecture.svg)
 
 
